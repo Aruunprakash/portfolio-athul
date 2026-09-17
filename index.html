@@ -87,11 +87,9 @@
       </div>
 
       <div class="behance-cover-right">
-        <div class="cover-drawing-frame" onclick="openLightbox('assets/elevation_front.png', 'FRONT SIDE ELEVATION', 'Architectural line drawing detailing floor levels, lintels, and elevation dimensions for the front facade.')" style="cursor: pointer;">
-          <img src="assets/elevation_front.png" alt="Front Side Architectural Elevation" class="cover-drawing-img">
-          <div class="cover-drawing-caption">
-            <span>FRONT SIDE ELEVATION — ARCHITECTURAL DRAFTING</span>
-          </div>
+        <!-- Single Cover Image Fitted Perfectly -->
+        <div class="cover-single-wrapper" onclick="openLightbox('assets/electrical_drawing_uploaded.jpg', 'GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)', 'Ground & First Floor Plan Electrical Layout Details 29-01-2026.')">
+          <img src="assets/electrical_drawing_uploaded.jpg" alt="Ground & First Floor Electrical Layout Plan" class="cover-single-img">
         </div>
         <div class="cover-accent-stripe"></div>
       </div>
@@ -144,7 +142,7 @@
   <section class="behance-project-section" id="projects">
     <div class="container" id="project-overview">
       <div class="project-page-card">
-        <div class="project-page-grid">
+        <div class="project-page-grid project-page-grid--full">
           
           <!-- Left Column: Details & Description -->
           <div class="project-page-left">
@@ -171,17 +169,6 @@
               <span class="maroon-tag">Sectional Drafting</span>
               <span class="maroon-tag">Construction Details</span>
             </div>
-          </div>
-
-          <!-- Right Column: B/W Axonometric Model / Section View -->
-          <div class="project-page-right">
-            <div class="dashed-drawing-box" onclick="openLightbox('assets/section_pq.png', '01 ARCHITECTURAL & STRUCTURAL MODEL - SECTION PQ', 'Detailed vertical section illustrating foundation footings, ground floor, first floor slab levels, staircase, and spatial openings.')">
-              <img src="assets/section_pq.png" alt="Revit Architectural Section Model" class="dashed-drawing-img">
-              <div class="drawing-hover-overlay">
-                <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Full HD Sheet</span>
-              </div>
-            </div>
-            <span class="drawing-sub-caption">SECTION ON PQ — ARCHITECTURAL & STRUCTURAL DRAWING</span>
           </div>
 
         </div>
@@ -333,6 +320,35 @@
             <div class="render-inspect-overlay">
               <button class="btn btn-primary btn-lg">
                 <i class="fa-solid fa-expand"></i> Inspect High-Res Render
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Electrical Floor Plan Layout Section (After 3D Photorealistic Exterior Render) -->
+  <section class="behance-render-section" id="project-electrical">
+    <div class="container">
+      <div class="render-card-wrapper">
+        <div class="render-header text-center">
+          <span class="maroon-badge"><i class="fa-solid fa-bolt"></i> ELECTRICAL LAYOUT DETAILS</span>
+          <h2 class="render-main-title">GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)</h2>
+          <p class="render-sub-desc">Comprehensive electrical layout detailing switch boards, lighting points, CCTV, exhaust fans, water purifier, and distribution board legends</p>
+        </div>
+
+        <div class="render-hero-display">
+          <div class="render-full-image-box" onclick="openLightbox('assets/electrical_drawing_uploaded.jpg', 'GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)', 'Detailed electrical working drawing showing Ground Floor & First Floor Layouts with complete Symbol/Code tables for Ceiling Fans, LED Panel Lights, Tube Lights, CCTV, AC Units, Distribution Boards, and Wall Fittings.')">
+            <div class="render-image-backdrop">
+              <div class="render-facade-graphic">
+                <img src="assets/electrical_drawing_uploaded.jpg" alt="Ground & First Floor Plan Electrical Layout" class="render-facade-img">
+              </div>
+            </div>
+            <div class="render-inspect-overlay">
+              <button class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-expand"></i> Inspect High-Res Electrical Layout
               </button>
             </div>
           </div>

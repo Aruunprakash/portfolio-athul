@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjectFilters();
   initModalListeners();
   initLightboxPan();
+  initCoverSlider();
 });
 
 /* --------------------------------------------------------------------------
@@ -396,3 +397,72 @@ function handleFormSubmit(e) {
     }, 1000);
   }
 }
+
+/* --------------------------------------------------------------------------
+   8. Cover Page Image Slider (Intro Page)
+   -------------------------------------------------------------------------- */
+function initCoverSlider() {
+  const track = document.getElementById('coverSliderTrack');
+  const dots = document.querySelectorAll('.cover-dot');
+
+  if (!track || !dots.length) return;
+
+  let currentSlide = 0;
+  const totalSlides = dots.length;
+  let autoplayTimer = null;
+
+  function goToSlide(index) {
+    currentSlide = (index + totalSlides) % totalSlides;
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentSlide);
+    });
+  }
+
+  // Dot click handlers
+  dots.forEach(dot => {
+    dot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const slideIndex = parseInt(dot.getAttribute('data-slide'), 10);
+      goToSlide(slideIndex);
+      resetAutoplay();
+    });
+  });
+
+  // Auto-play every 4 seconds
+  function startAutoplay() {
+    autoplayTimer = setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 4000);
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    startAutoplay();
+  }
+
+  // Pause autoplay when hovering over the slider
+  if (track.parentElement) {
+    track.parentElement.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+    track.parentElement.addEventListener('mouseleave', startAutoplay);
+  }
+
+  // Touch/swipe support
+  let touchStartX = 0;
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+
+  track.addEventListener('touchend', (e) => {
+    const deltaX = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(deltaX) > 40) {
+      goToSlide(deltaX < 0 ? currentSlide + 1 : currentSlide - 1);
+      resetAutoplay();
+    }
+  }, { passive: true });
+
+  goToSlide(0);
+  startAutoplay();
+}
+
