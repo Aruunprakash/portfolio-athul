@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATHUL P | Architectural & 3D Visualization Portfolio</title>
+  <meta name="description" content="Portfolio of Athul P - Junior Architect, Interior Designer, Draftsman & 3D Visualizer based in Kozhikode, Kerala. Certified in Diploma in Architecture, Autodesk 3ds Max with V-Ray, Autodesk AutoCAD, and Revit Architecture.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Grid Pattern -->
+  <div class="blueprint-grid-bg" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-symbol"><i class="fa-solid fa-compass-drafting"></i></span>
+        <div class="brand-text">
+          <span class="brand-name">ATHUL P</span>
+          <span class="brand-sub">ARCHITECTURE & 3D VISUALIZATION</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link"><i class="fa-solid fa-user-gear"></i> About</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Works</a>
+        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-sliders"></i> Skills</a>
+        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Certifications</a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-sun light-icon"></i>
+          <i class="fa-solid fa-moon dark-icon"></i>
+        </button>
+
+        <button class="btn btn-outline" id="openCvModalBtn">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>CV Resume</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Cover Page Section (Reference: Behance Cover) -->
+  <section class="hero-behance-section" id="hero">
+    <div class="behance-cover-container">
+      <div class="behance-cover-left">
+        <div class="cover-brand-header">
+          <h1 class="cover-portfolio-title">ARCHITECTURAL PORTFOLIO</h1>
+          <h2 class="cover-author-name">ATHUL P</h2>
+          <p class="cover-author-role">JUNIOR ARCHITECT & 3D VISUALIZER</p>
+        </div>
+
+        <div class="cover-meta-pills">
+          <span class="cover-pill"><i class="fa-solid fa-location-dot"></i> Kozhikode, Kerala, India</span>
+        </div>
+
+        <div class="cover-cta-row">
+          <a href="#project-overview" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-down-long"></i> View Projects
+          </a>
+          <button class="btn btn-secondary" onclick="openCvModal()">
+            <i class="fa-solid fa-eye"></i> Preview CV
+          </button>
+          <a href="assets/athul_cv.pdf" download class="btn btn-outline">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+        </div>
+      </div>
+
+      <div class="behance-cover-right">
+        <!-- Single Cover Image Fitted Perfectly -->
+        <div class="cover-single-wrapper" onclick="openLightbox('assets/hero_cover.jpg', 'ARCHITECTURAL PERSPECTIVE SKETCH', 'Modern cantilevered architectural concept with biophilic balconies, street-level context, and hand-drawn pencil shading.')">
+          <img src="assets/hero_cover.jpg" alt="Architectural Concept Hand-Drawn Perspective Sketch" class="cover-single-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile & Personal Specifications Summary -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">[ PROFILE SUMMARY ]</span>
+        <h2 class="section-title">Architectural Mindset & Technical Focus</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-summary">
+          <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <h3>Summary & Career Objective</h3>
+          <p>
+            Motivated Architecture Diploma graduate seeking an entry-level Junior Architect role. I possess a strong foundation in architectural drafting, 3D visualization, and CAD/Revit workflows backed by multiple hands-on internship experiences at recognized design practices in Calicut.
+          </p>
+          <p>
+            Certified in <strong>Autodesk AutoCAD</strong>, <strong>Revit Architecture</strong>, and <strong>Autodesk 3ds Max with V-Ray Rendering</strong>. Eager to contribute technical drafting precision, spatial creativity, and rigorous attention to detail while continuing to expand professional expertise.
+          </p>
+        </div>
+
+        <div class="about-card key-details">
+          <div class="card-icon"><i class="fa-solid fa-address-card"></i></div>
+          <h3>Personal Specifications</h3>
+          <ul class="details-list">
+            <li>
+              <span class="detail-label"><i class="fa-solid fa-flag"></i> Nationality:</span>
+              <span class="detail-val">Indian</span>
+            </li>
+            <li>
+              <span class="detail-label"><i class="fa-solid fa-calendar-day"></i> Date of Birth:</span>
+              <span class="detail-val">27 / 04 / 2004</span>
+            </li>
+            <li>
+              <span class="detail-label"><i class="fa-solid fa-location-crosshairs"></i> Location:</span>
+              <span class="detail-val">Kozhikode, Kerala, India</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Page 01: Proposed Residential Building Plan (Corporation Approval & Working Drawing Sheet) -->
+  <section class="behance-project-section" id="projects">
+    <div class="container" id="project-overview">
+      <div class="project-page-card">
+        <div class="project-page-header">
+          <div class="project-page-number">01</div>
+          <h2 class="project-page-title">PROPOSED RESIDENTIAL BUILDING PLAN — 2D WORKING DRAWINGS & APPROVAL SHEET</h2>
+          <div class="project-spec-block">
+            <p><strong>Project:</strong> Building Plan of Proposed Residential House (Ward No: 23, Block No: 05, RS No: 427/34, 427/33) | <strong>Authority:</strong> Calicut Corporation</p>
+            <p><strong>Location:</strong> Panniyankara, Kozhikode, Kerala, India | <strong>Firm / Practice:</strong> Design Palette, Calicut</p>
+            <p><strong>Scope:</strong> Ground Floor Plan, First Floor Plan, Front Elevation, Section on AA, Joinery Schedule & Area Statement (Total Built-Up Area: 268.76 m²)</p>
+          </div>
+          <div class="project-tags-group">
+            <span class="maroon-tag">AutoCAD 2D</span>
+            <span class="maroon-tag">Corporation Approval</span>
+            <span class="maroon-tag">Ground Floor Plan (155.49 m²)</span>
+            <span class="maroon-tag">First Floor Plan (113.27 m²)</span>
+            <span class="maroon-tag">Front Elevation</span>
+            <span class="maroon-tag">Section AA</span>
+            <span class="maroon-tag">Joinery Details</span>
+            <span class="maroon-tag">Area Statement</span>
+          </div>
+        </div>
+
+        <div class="project-full-drawing-wrapper" style="margin-top: 2.5rem;">
+          <div class="dashed-drawing-box" onclick="openLightbox('assets/residential_building_plan.png', 'PROPOSED RESIDENTIAL BUILDING PLAN — CALICUT CORPORATION', 'Comprehensive 2D architectural working drawing package prepared at Design Palette, Calicut. Features Ground Floor Plan (155.49 m²), First Floor Plan (113.27 m²), Front Elevation, Cross Section AA with staircase specifications (T: 25cm, R: 17.5cm, L: 110cm), Joinery Schedule, and Area Statement (Total Built-up Area: 268.76 m²).')">
+            <img src="assets/residential_building_plan.png" alt="Proposed Residential Building Plan - Calicut Corporation" class="dashed-drawing-img" style="max-height: 700px; width: 100%; object-fit: contain;">
+            <div class="drawing-hover-overlay">
+              <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Full HD Plan Sheet</span>
+            </div>
+          </div>
+          <span class="drawing-sub-caption">CLICK TO INSPECT FULL HIGH-RESOLUTION WORKING DRAWING SHEET (3500 x 2474 PX)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Page 02: Multi-View B/W Sheet Layout (Reference: Image 02) -->
+  <section class="behance-project-section" id="project-multiview">
+    <div class="container">
+      <div class="project-multiview-card">
+        <div class="multiview-grid">
+          
+          <!-- Left Column: Vertical Section AA Drawing -->
+          <div class="multiview-col-left">
+            <div class="drawing-card-box" onclick="openLightbox('assets/section_aa.png', 'RESIDENTIAL SPATIAL VOLUME & CIRCULATION (SECTION AA)', 'Longitudinal cross-section detailing staircase specifications (W: 100cm, T: 25cm, R: 17.5cm), double height void, passage levels, and bay window projections.')">
+              <img src="assets/section_aa.png" alt="Section AA Floor & Roof Plan" class="multiview-img vertical">
+              <div class="drawing-hover-overlay">
+                <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Section AA</span>
+              </div>
+            </div>
+            <h4 class="maroon-caption">SECTION ON AA — STAIRCASE & SPATIAL VOLUME</h4>
+          </div>
+
+          <!-- Right Column: Isometric & 3D Elevation Views -->
+          <div class="multiview-col-right">
+            
+            <!-- Top Right: North Elevation -->
+            <div class="multiview-block">
+              <div class="drawing-card-box" onclick="openLightbox('assets/elevation_north.png', 'NORTH SIDE ARCHITECTURAL ELEVATION', 'Detailed North Side Elevation drawing featuring 430cm wide full-height courtyard glazing, side courtyard area, sit-out slab (+500 LVL), and parapet terrace details.')">
+                <img src="assets/elevation_north.png" alt="Isometric View - North Elevation" class="multiview-img horizontal">
+                <div class="drawing-hover-overlay">
+                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect North Elevation</span>
+                </div>
+              </div>
+              <h4 class="maroon-caption text-right">NORTH ELEVATION — COURTYARD GLAZING FACADE</h4>
+            </div>
+
+            <!-- Bottom Right: South Elevation -->
+            <div class="multiview-block">
+              <div class="drawing-card-box" onclick="openLightbox('assets/elevation_south.png', 'SOUTH SIDE ARCHITECTURAL ELEVATION', 'Longitudinal South Side Elevation drawing detailing window opening schedules (203cm & 60cm openings), vertical stair glass volume (280cm), rear open terrace, and sit-out pillar.')">
+                <img src="assets/elevation_south.png" alt="3D View - South Elevation" class="multiview-img horizontal">
+                <div class="drawing-hover-overlay">
+                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect South Elevation</span>
+                </div>
+              </div>
+              <h4 class="maroon-caption text-right">SOUTH ELEVATION — WINDOW SCHEDULES & STAIR GLASS</h4>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Page 02: Master Bedroom Interior Design & 2D Plan Package -->
+  <section class="behance-project-section" id="project-bedroom">
+    <div class="container">
+      <div class="project-page-card">
+        <div class="project-page-header">
+          <div class="project-page-number">02</div>
+          <h2 class="project-page-title">INTERIOR DESIGN & 3D VISUALIZATION — MASTER BEDROOM PACKAGE</h2>
+          <div class="project-spec-block">
+            <p><strong>Project:</strong> Residential Master Bedroom Interior Design & 2D CAD Layout (406 x 351 CM)</p>
+            <p><strong>Scope:</strong> 2D Floor Plan Layout, Custom Wooden Wardrobe Unit, Backlit Oval Dressing Vanity & 3D Photorealistic Interior Rendering.</p>
+          </div>
+        </div>
+
+        <div class="bedroom-grid">
+          
+          <!-- Left Column: 2D CAD Bedroom Floor Plan -->
+          <div class="bedroom-plan-col">
+            <div class="dashed-drawing-box" onclick="openLightbox('assets/bedroom_plan.png', '02 2D CAD BEDROOM FLOOR PLAN (406 x 351 CM)', 'Detailed 2D CAD floor plan detailing bedroom dimensions (406x351cm), balcony (173x150cm), custom wardrobes, study table with dressing, side tables, and door swings.')">
+              <img src="assets/bedroom_plan.png" alt="2D CAD Bedroom Floor Plan" class="bedroom-plan-img">
+              <div class="drawing-hover-overlay">
+                <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View HD 2D CAD Plan</span>
+              </div>
+            </div>
+            <span class="drawing-sub-caption">2D CAD FLOOR PLAN — DIMENSIONS 406 x 351 CM & BALCONY LAYOUT</span>
+          </div>
+
+          <!-- Right Column: 4 Corresponding 3D Photorealistic Renders (2x2 Grid) -->
+          <div class="bedroom-renders-col">
+            <div class="bedroom-renders-grid">
+              
+              <!-- Render 1 -->
+              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_1.jpg', 'MASTER BEDROOM INTERIOR — VIEW 01 (VANITY & WARDROBE)', 'Photorealistic 3D interior render showing master bed, custom wood wardrobe, illuminated dressing console with oval mirror, and wooden ceiling fan.')">
+                <img src="assets/bedroom_render_1.jpg" alt="Master Bedroom 3D Render View 1" class="bedroom-render-img">
+                <div class="drawing-hover-overlay">
+                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 01</span>
+                </div>
+                <span class="render-mini-label">VIEW 01 — DRESSING & WARDROBE</span>
+              </div>
+
+              <!-- Render 2 -->
+              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_2.jpg', 'MASTER BEDROOM INTERIOR — VIEW 02 (BACKLIT VANITY CONSOLE)', 'Detailed 3D interior render highlighting the backlit oval dressing mirror, open storage shelves, custom wood paneling, and brass handles.')">
+                <img src="assets/bedroom_render_2.jpg" alt="Master Bedroom 3D Render View 2" class="bedroom-render-img">
+                <div class="drawing-hover-overlay">
+                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 02</span>
+                </div>
+                <span class="render-mini-label">VIEW 02 — BACKLIT VANITY CONSOLE</span>
+              </div>
+
+              <!-- Render 3 -->
+              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_3.jpg', 'MASTER BEDROOM INTERIOR — VIEW 03 (BED & LANDSCAPE PAINTING)', 'Photorealistic 3D interior render showing bed, side table, landscape artwork, and full-height custom wooden wardrobe unit.')">
+                <img src="assets/bedroom_render_3.jpg" alt="Master Bedroom 3D Render View 3" class="bedroom-render-img">
+                <div class="drawing-hover-overlay">
+                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 03</span>
+                </div>
+                <span class="render-mini-label">VIEW 03 — BED & ARTWORK WALL</span>
+              </div>
+
+              <!-- Render 4 -->
+              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_4.jpg', 'MASTER BEDROOM INTERIOR — VIEW 04 (BALCONY & WINDOW VIEW)', 'Photorealistic 3D interior render showing master bed, side table, window with sheer curtains, air conditioner, and balcony door layout.')">
+                <img src="assets/bedroom_render_4.jpg" alt="Master Bedroom 3D Render View 4" class="bedroom-render-img">
+                <div class="drawing-hover-overlay">
+                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 04</span>
+                </div>
+                <span class="render-mini-label">VIEW 04 — WINDOW & BALCONY VIEW</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Page 03: Full-Bleed Colorful 3D Render Showcase (Reference: Image 03) -->
+  <section class="behance-render-section" id="project-render">
+    <div class="container">
+      <div class="render-card-wrapper">
+        <div class="render-header text-center">
+          <span class="maroon-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> 3DS MAX & V-RAY VISUALIZATION</span>
+          <h2 class="render-main-title">PHOTOREALISTIC EXTERIOR ARCHITECTURAL RENDERS</h2>
+          <p class="render-sub-desc">V-Ray Lighting scenes, Daylight simulation, Material Texturing & Exterior Environment Renders</p>
+        </div>
+
+        <div class="render-hero-display">
+          <div class="render-full-image-box" onclick="openLightbox('assets/exterior_render_full.jpg', 'PHOTOREALISTIC ARCHITECTURAL EXTERIOR VISUALIZATION', 'Full single page architectural 3D exterior rendering created with 3ds Max & V-Ray featuring photorealistic lighting, materials, paving, landscaping, and vehicle integration.')">
+            <div class="render-image-backdrop">
+              <div class="render-facade-graphic">
+                <img src="assets/exterior_render_full.jpg" alt="Photorealistic Architectural 3D Exterior Render" class="render-facade-img">
+                <div class="render-glass-reflection"></div>
+              </div>
+            </div>
+            <div class="render-inspect-overlay">
+              <button class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-expand"></i> Inspect High-Res Render
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Electrical Floor Plan Layout Section (After 3D Photorealistic Exterior Render) -->
+  <section class="behance-render-section" id="project-electrical">
+    <div class="container">
+      <div class="render-card-wrapper">
+        <div class="render-header text-center">
+          <span class="maroon-badge"><i class="fa-solid fa-bolt"></i> ELECTRICAL LAYOUT DETAILS</span>
+          <h2 class="render-main-title">GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)</h2>
+          <p class="render-sub-desc">Comprehensive electrical layout detailing switch boards, lighting points, CCTV, exhaust fans, water purifier, and distribution board legends</p>
+        </div>
+
+        <div class="render-hero-display">
+          <div class="render-full-image-box" onclick="openLightbox('assets/electrical_drawing_uploaded.jpg', 'GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)', 'Detailed electrical working drawing showing Ground Floor & First Floor Layouts with complete Symbol/Code tables for Ceiling Fans, LED Panel Lights, Tube Lights, CCTV, AC Units, Distribution Boards, and Wall Fittings.')">
+            <div class="render-image-backdrop">
+              <div class="render-facade-graphic">
+                <img src="assets/electrical_drawing_uploaded.jpg" alt="Ground & First Floor Plan Electrical Layout" class="render-facade-img">
+              </div>
+            </div>
+            <div class="render-inspect-overlay">
+              <button class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-expand"></i> Inspect High-Res Electrical Layout
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Internships Timeline Section -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">[ CAREER HISTORY ]</span>
+        <h2 class="section-title">Internship & Professional Experience</h2>
+        <p class="section-desc">Hands-on architectural practice across leading design firms in Calicut, India</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <span class="role-badge">Junior Architect</span>
+                <h3 class="timeline-role">Junior Architect</h3>
+                <h4 class="timeline-company"><i class="fa-solid fa-building-user"></i> Design Palette, Calicut, India</h4>
+              </div>
+              <span class="timeline-date"><i class="fa-solid fa-calendar"></i> Aug 2025 – Feb 2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Prepared detailed 2D architectural and structural drawings using AutoCAD.</li>
+              <li>Developed floor plans, elevations, sections, and comprehensive construction details for client execution.</li>
+              <li>Collaborated with design leads to maintain precision and code compliance across working drawings.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AutoCAD 2D</span>
+              <span>Floor Plans</span>
+              <span>Elevations & Sections</span>
+              <span>Construction Details</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <span class="role-badge intern-badge">Architectural Intern</span>
+                <h3 class="timeline-role">Architectural Intern</h3>
+                <h4 class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> CADD Campus, Calicut, India</h4>
+              </div>
+              <span class="timeline-date"><i class="fa-solid fa-calendar"></i> Dec 2024 – Jan 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Assisted in drafting technical drawings and site layouts for residential projects.</li>
+              <li>Developed basic 3D massing models using SketchUp to visualize spatial arrangements.</li>
+              <li>Participated in design discussions and client review meetings.</li>
+              <li>Observed site execution and construction coordination firsthand.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Technical Drafting</span>
+              <span>SketchUp 3D</span>
+              <span>Site Layouts</span>
+              <span>Client Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <span class="role-badge intern-badge">Architectural Intern</span>
+                <h3 class="timeline-role">Architectural Intern</h3>
+                <h4 class="timeline-company"><i class="fa-solid fa-drafting-compass"></i> Saleem Groups / CAD Center, Calicut, India</h4>
+              </div>
+              <span class="timeline-date"><i class="fa-solid fa-calendar"></i> Apr 2024 – May 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Prepared architectural working drawings and site plans for residential and commercial projects.</li>
+              <li>Supported design coordination between structural and architectural requirements.</li>
+              <li>Assisted in AutoCAD drafting and SketchUp presentations.</li>
+              <li>Observed site inspections and reporting processes.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Working Drawings</span>
+              <span>Site Plans</span>
+              <span>AutoCAD</span>
+              <span>Site Inspection</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Competencies Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">[ TECHNICAL MATRIX ]</span>
+        <h2 class="section-title">Technical Skills & Certified Software Proficiency</h2>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Technical Software Skills -->
+        <div class="skills-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Certified Software & CAD/3D Tools</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-vector-square"></i> Autodesk AutoCAD (2D Drafting & Documentation)</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-cube"></i> Autodesk 3ds Max with V-Ray Rendering</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-building"></i> Revit Architecture</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-cubes"></i> SketchUp (3D Modeling)</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-wand-magic-sparkles"></i> Lumion (Visualization)</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-image"></i> Photoshop (Presentation Boards)</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architectural Drafting Expertise -->
+        <div class="skills-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fa-solid fa-draw-polygon"></i></div>
+            <h3>Drafting & Architectural Knowledge</h3>
+          </div>
+          <div class="skill-chip-group">
+            <div class="skill-chip">
+              <i class="fa-solid fa-check"></i>
+              <span>Architectural Drawings</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-check"></i>
+              <span>Working Drawings</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-check"></i>
+              <span>Floor Plans</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-check"></i>
+              <span>Elevations</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-check"></i>
+              <span>Structural Sections</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-check"></i>
+              <span>Construction Details</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-check"></i>
+              <span>Site Layouts & Planning</span>
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-check"></i>
+              <span>Staircase Geometry & Detailing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills & Languages -->
+        <div class="skills-category-card">
+          <div class="category-header">
+            <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Soft Skills & Languages</h3>
+          </div>
+          <div class="soft-skills-container">
+            <h4>Professional Traits</h4>
+            <div class="pill-group">
+              <span class="pill"><i class="fa-solid fa-clock"></i> Time Management</span>
+              <span class="pill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+              <span class="pill"><i class="fa-solid fa-comments"></i> Communication Skills</span>
+              <span class="pill"><i class="fa-solid fa-eye"></i> Attention to Detail</span>
+            </div>
+
+            <h4 class="mt-4">Languages Spoken</h4>
+            <div class="languages-list">
+              <div class="lang-item">
+                <span class="lang-name">Malayalam</span>
+                <span class="lang-level fluent">Fluent (Native)</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">English</span>
+                <span class="lang-level proficient">Proficient</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-level basic">Basic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications Section -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">[ QUALIFICATIONS & CERTIFICATIONS ]</span>
+        <h2 class="section-title">Education & Professional Certifications</h2>
+      </div>
+
+      <div class="education-grid">
+
+        <!-- 1. Diploma in Architecture -->
+        <div class="edu-card featured-edu">
+          <div class="edu-badge-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="edu-content">
+            <span class="edu-year"><i class="fa-solid fa-calendar"></i> 2022 – 2025</span>
+            <h3 class="edu-title">Diploma in Architecture</h3>
+            <h4 class="edu-institution">JDT Islam Polytechnic College, Calicut</h4>
+            <p class="edu-board">State Board of Technical Education, Kerala</p>
+            <p class="edu-desc">Comprehensive 3-year technical diploma program covering architectural design theory, building construction principles, CAD drafting, structural mechanics, and building codes.</p>
+          </div>
+        </div>
+
+        <!-- 2. Autodesk 3ds Max with V-Ray Certification -->
+        <div class="edu-card">
+          <div class="edu-badge-icon"><i class="fa-solid fa-cube"></i></div>
+          <div class="edu-content">
+            <span class="edu-year"><i class="fa-solid fa-certificate"></i> Certified Professional</span>
+            <h3 class="edu-title">Autodesk 3ds Max with V-Ray Rendering</h3>
+            <h4 class="edu-institution">Certified Coursework</h4>
+            <p class="edu-desc">Advanced certification in photorealistic 3D modeling, lighting setup, material creation, and V-Ray architectural rendering.</p>
+          </div>
+        </div>
+
+        <!-- 3. Autodesk AutoCAD Certification -->
+        <div class="edu-card">
+          <div class="edu-badge-icon"><i class="fa-solid fa-vector-square"></i></div>
+          <div class="edu-content">
+            <span class="edu-year"><i class="fa-solid fa-certificate"></i> Certified Professional</span>
+            <h3 class="edu-title">Autodesk AutoCAD</h3>
+            <h4 class="edu-institution">Certified Coursework</h4>
+            <p class="edu-desc">Professional 2D drafting certification covering architectural plans, structural sections, elevations, and working drawings.</p>
+          </div>
+        </div>
+
+        <!-- 4. Revit Architecture Certification -->
+        <div class="edu-card">
+          <div class="edu-badge-icon"><i class="fa-solid fa-building"></i></div>
+          <div class="edu-content">
+            <span class="edu-year"><i class="fa-solid fa-certificate"></i> Certified Professional</span>
+            <h3 class="edu-title">Revit Architecture</h3>
+            <h4 class="edu-institution">Certified Coursework</h4>
+            <p class="edu-desc">Architectural modeling certification covering floor plans, wall sections, schedules, and 3D building components.</p>
+          </div>
+        </div>
+
+        <!-- 5. Master Diploma in Building Designing -->
+        <div class="edu-card">
+          <div class="edu-badge-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="edu-content">
+            <span class="edu-year"><i class="fa-solid fa-clock"></i> 6 Month Professional Course</span>
+            <h3 class="edu-title">Master Diploma in Building Designing</h3>
+            <h4 class="edu-institution">CADD CAMPUS CALICUT</h4>
+            <p class="edu-desc">Master diploma program covering comprehensive building design software, AutoCAD drafting, 3ds Max, Revit Architecture, and presentation board design.</p>
+          </div>
+        </div>
+
+        <!-- 6. Higher Secondary Education -->
+        <div class="edu-card">
+          <div class="edu-badge-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-content">
+            <span class="edu-year"><i class="fa-solid fa-calendar"></i> 2020 – 2022</span>
+            <h3 class="edu-title">Higher Secondary Education</h3>
+            <h4 class="edu-institution">Govt. HSS Azchavattam, Kozhikode</h4>
+            <p class="edu-board">Kerala Board of Higher Secondary Education</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footprint Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">[ GET IN TOUCH ]</span>
+        <h2 class="section-title">Connect & Collaborate</h2>
+        <p class="section-desc">Open for Junior Architect, Draftsman & 3D Visualization Roles</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Cards -->
+        <div class="contact-info-wrapper">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Email Address</span>
+              <a href="mailto:athulpsajeev1816@gmail.com" class="contact-value">athulpsajeev1816@gmail.com</a>
+            </div>
+            <button class="copy-btn" onclick="copyText('athulpsajeev1816@gmail.com', this)" title="Copy Email">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Kozhikode, Kerala, India</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">LinkedIn Profile</span>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-value">Connect on LinkedIn</a>
+            </div>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="external-link-btn" title="Open LinkedIn">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Contact Form -->
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <h3>Send a Direct Message</h3>
+            
+            <div class="form-group">
+              <label for="senderName"><i class="fa-solid fa-user"></i> Your Name</label>
+              <input type="text" id="senderName" required placeholder="Arch. John Doe / Firm Name">
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail"><i class="fa-solid fa-envelope"></i> Email Address</label>
+              <input type="email" id="senderEmail" required placeholder="name@company.com">
+            </div>
+
+            <div class="form-group">
+              <label for="msgSubject"><i class="fa-solid fa-heading"></i> Subject</label>
+              <input type="text" id="msgSubject" required placeholder="Job Opportunity / Project Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="senderMsg"><i class="fa-solid fa-comment-dots"></i> Message</label>
+              <textarea id="senderMsg" rows="4" required placeholder="Hello Athul, we are interested in discussing an architectural drafting role..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">ATHUL P</span>
+        <span class="footer-copy">&copy; 2026 Athul P. All Rights Reserved. Junior Architect & 3D Visualizer Portfolio.</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" title="Back to top">
+          Back to top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for HD Drawing View -->
+  <div class="modal-overlay" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="lightbox-container">
+      <div class="lightbox-header">
+        <div class="lightbox-title-group">
+          <h3 id="lightboxTitle">Architectural Drawing</h3>
+          <span id="lightboxCaption">Description</span>
+        </div>
+        <div class="lightbox-controls">
+          <button onclick="zoomLightbox(1.2)" class="modal-icon-btn" title="Zoom In"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          <button onclick="zoomLightbox(0.8)" class="modal-icon-btn" title="Zoom Out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+          <button onclick="resetLightboxZoom()" class="modal-icon-btn" title="Reset Zoom"><i class="fa-solid fa-rotate-right"></i></button>
+          <button onclick="closeLightbox()" class="modal-icon-btn close-btn" title="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+      <div class="lightbox-body" id="lightboxBody">
+        <img id="lightboxImg" src="" alt="HD Architectural Drawing">
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF CV Modal -->
+  <div class="modal-overlay" id="cvModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="cv-modal-container">
+      <div class="cv-modal-header">
+        <div class="cv-modal-title">
+          <i class="fa-solid fa-file-pdf text-accent"></i>
+          <span>Curriculum Vitae — ATHUL P</span>
+        </div>
+        <div class="cv-modal-actions">
+          <a href="assets/athul_cv.pdf" download class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <button onclick="closeCvModal()" class="modal-icon-btn close-btn" title="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+      <div class="cv-modal-body">
+        <iframe src="assets/athul_cv.pdf" class="pdf-frame" title="Athul P CV PDF Viewer"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
