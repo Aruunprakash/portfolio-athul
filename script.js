@@ -14,9 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
 /* --------------------------------------------------------------------------
    1. Theme System (Dark / Light Mode)
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   1. Theme System (Dark / Light Mode)
+   -------------------------------------------------------------------------- */
 function initTheme() {
   const themeToggleBtn = document.getElementById('themeToggle');
-  const savedTheme = localStorage.getItem('athul_portfolio_theme') || 'dark';
+  // Changed default fallback from 'dark' to 'light'
+  const savedTheme = localStorage.getItem('athul_portfolio_theme') || 'light';
 
   document.documentElement.setAttribute('data-theme', savedTheme);
 
