@@ -9,23 +9,26 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjectFilters();
   initModalListeners();
   initLightboxPan();
-  initCoverSlider();
 });
 
 /* --------------------------------------------------------------------------
    1. Theme System (Dark / Light Mode)
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   1. Theme System (Dark / Light Mode)
+   -------------------------------------------------------------------------- */
 function initTheme() {
   const themeToggleBtn = document.getElementById('themeToggle');
-  const savedTheme = localStorage.getItem('athul_portfolio_theme') || 'dark';
-  
+  // Changed default fallback from 'dark' to 'light'
+  const savedTheme = localStorage.getItem('athul_portfolio_theme') || 'light';
+
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
       const currentTheme = document.documentElement.getAttribute('data-theme');
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      
+
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('athul_portfolio_theme', newTheme);
     });
@@ -64,7 +67,7 @@ function initMobileNav() {
 }
 
 /* --------------------------------------------------------------------------
-   3. Project Horizontal Scroll & Sheet Controls
+   3. Project Horizontal Scroll & Controls
    -------------------------------------------------------------------------- */
 function initProjectScroll() {
   const track = document.getElementById('projectSheetsTrack');
@@ -81,9 +84,8 @@ function initProjectScroll() {
     const visibleCards = Array.from(track.querySelectorAll('.sheet-card')).filter(
       card => card.style.display !== 'none'
     );
-    
-    if (totalSheetsEl) totalSheetsEl.textContent = visibleCards.length;
 
+    if (totalSheetsEl) totalSheetsEl.textContent = visibleCards.length;
     if (visibleCards.length === 0) return;
 
     const scrollLeft = track.scrollLeft;
@@ -159,7 +161,6 @@ function initProjectScroll() {
 
   if (wrapper) {
     wrapper.addEventListener('mousedown', (e) => {
-      // Don't drag if clicking buttons or links
       if (e.target.closest('button') || e.target.closest('a')) return;
       isDown = true;
       wrapper.classList.add('active-drag');
@@ -188,13 +189,11 @@ function initProjectScroll() {
 
   track.addEventListener('scroll', updateScrollState);
   window.addEventListener('resize', updateScrollState);
-
-  // Initial call
   updateScrollState();
 }
 
 /* --------------------------------------------------------------------------
-   4. Project Category Filtering
+   4. Category Filtering
    -------------------------------------------------------------------------- */
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -223,7 +222,6 @@ function initProjectFilters() {
         track.scrollTo({ left: 0, behavior: 'smooth' });
       }
 
-      // Re-trigger scroll state calculation after DOM layout update
       setTimeout(() => {
         const scrollEvent = new Event('scroll');
         if (track) track.dispatchEvent(scrollEvent);
@@ -233,7 +231,7 @@ function initProjectFilters() {
 }
 
 /* --------------------------------------------------------------------------
-   4. HD Drawing Lightbox Modal Controls
+   5. HD Drawing Lightbox Modal Controls
    -------------------------------------------------------------------------- */
 let currentZoom = 1;
 
@@ -247,7 +245,7 @@ function openLightbox(imgSrc, title, caption) {
     img.src = imgSrc;
     if (titleEl) titleEl.textContent = title || 'Architectural Drawing';
     if (captionEl) captionEl.textContent = caption || '';
-    
+
     resetLightboxZoom();
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -266,7 +264,7 @@ function zoomLightbox(factor) {
   const img = document.getElementById('lightboxImg');
   if (img) {
     currentZoom *= factor;
-    currentZoom = Math.max(0.5, Math.min(currentZoom, 4.0)); // restrict zoom between 0.5x and 4x
+    currentZoom = Math.max(0.5, Math.min(currentZoom, 4.0));
     img.style.transform = `scale(${currentZoom})`;
   }
 }
@@ -283,7 +281,7 @@ function resetLightboxZoom() {
 function initLightboxPan() {
   const lightboxBody = document.getElementById('lightboxBody');
   const img = document.getElementById('lightboxImg');
-  
+
   if (!lightboxBody || !img) return;
 
   let isDragging = false;
@@ -315,7 +313,7 @@ function initLightboxPan() {
 }
 
 /* --------------------------------------------------------------------------
-   5. PDF Resume Modal Controls
+   6. PDF Resume Modal Controls
    -------------------------------------------------------------------------- */
 function openCvModal() {
   const modal = document.getElementById('cvModal');
@@ -339,7 +337,6 @@ function initModalListeners() {
     openCvBtn.addEventListener('click', openCvModal);
   }
 
-  // Close modals on escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeLightbox();
@@ -347,7 +344,6 @@ function initModalListeners() {
     }
   });
 
-  // Close when clicking overlay backdrop
   const modals = document.querySelectorAll('.modal-overlay');
   modals.forEach(modal => {
     modal.addEventListener('click', (e) => {
@@ -360,7 +356,7 @@ function initModalListeners() {
 }
 
 /* --------------------------------------------------------------------------
-   6. Utilities & Copy Helper
+   7. Utilities & Copy Helper
    -------------------------------------------------------------------------- */
 function copyText(text, btnElement) {
   navigator.clipboard.writeText(text).then(() => {
@@ -377,92 +373,23 @@ function copyText(text, btnElement) {
 }
 
 /* --------------------------------------------------------------------------
-   7. Form Submission Handling
+   8. Form Submission Handling
    -------------------------------------------------------------------------- */
 function handleFormSubmit(e) {
   e.preventDefault();
   const statusEl = document.getElementById('formStatus');
   if (statusEl) {
     statusEl.innerHTML = '<span style="color: var(--accent-green); font-weight: 600;"><i class="fa-solid fa-circle-check"></i> Thank you! Your message has been prepared. Launching email client...</span>';
-    
+
     const name = document.getElementById('senderName').value;
     const email = document.getElementById('senderEmail').value;
     const subject = document.getElementById('msgSubject').value;
     const message = document.getElementById('senderMsg').value;
 
     const mailtoUrl = `mailto:athulpsajeev1816@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`)}`;
-    
+
     setTimeout(() => {
       window.location.href = mailtoUrl;
     }, 1000);
   }
 }
-
-/* --------------------------------------------------------------------------
-   8. Cover Page Image Slider (Intro Page)
-   -------------------------------------------------------------------------- */
-function initCoverSlider() {
-  const track = document.getElementById('coverSliderTrack');
-  const dots = document.querySelectorAll('.cover-dot');
-
-  if (!track || !dots.length) return;
-
-  let currentSlide = 0;
-  const totalSlides = dots.length;
-  let autoplayTimer = null;
-
-  function goToSlide(index) {
-    currentSlide = (index + totalSlides) % totalSlides;
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === currentSlide);
-    });
-  }
-
-  // Dot click handlers
-  dots.forEach(dot => {
-    dot.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const slideIndex = parseInt(dot.getAttribute('data-slide'), 10);
-      goToSlide(slideIndex);
-      resetAutoplay();
-    });
-  });
-
-  // Auto-play every 4 seconds
-  function startAutoplay() {
-    autoplayTimer = setInterval(() => {
-      goToSlide(currentSlide + 1);
-    }, 4000);
-  }
-
-  function resetAutoplay() {
-    clearInterval(autoplayTimer);
-    startAutoplay();
-  }
-
-  // Pause autoplay when hovering over the slider
-  if (track.parentElement) {
-    track.parentElement.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
-    track.parentElement.addEventListener('mouseleave', startAutoplay);
-  }
-
-  // Touch/swipe support
-  let touchStartX = 0;
-  track.addEventListener('touchstart', (e) => {
-    touchStartX = e.touches[0].clientX;
-  }, { passive: true });
-
-  track.addEventListener('touchend', (e) => {
-    const deltaX = e.changedTouches[0].clientX - touchStartX;
-    if (Math.abs(deltaX) > 40) {
-      goToSlide(deltaX < 0 ? currentSlide + 1 : currentSlide - 1);
-      resetAutoplay();
-    }
-  }, { passive: true });
-
-  goToSlide(0);
-  startAutoplay();
-}
-
