@@ -290,13 +290,12 @@ a {
    5. Hero Section (Edge-to-Edge Right Image Fit)
    -------------------------------------------------------------------------- */
 .hero-behance-section {
-  padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-top: 5.5rem; /* Reduced from 8rem to remove the gap */
+  padding-bottom: 3rem;
   background: var(--bg-primary);
   position: relative;
   overflow: hidden;
 }
-
 .behance-cover-container {
   max-width: 1320px;
   margin: 0 auto;
