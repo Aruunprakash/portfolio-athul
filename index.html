@@ -59,7 +59,7 @@
     </div>
   </header>
 
-  <!-- Hero / Cover Page Section (Reference: Behance Cover) -->
+  <!-- Hero / Cover Page Section -->
   <section class="hero-behance-section" id="hero">
     <div class="behance-cover-container">
       <div class="behance-cover-left">
@@ -87,19 +87,18 @@
       </div>
 
       <div class="behance-cover-right">
-        <!-- Single Cover Image Fitted Perfectly -->
-        <div class="cover-single-wrapper" onclick="openLightbox('assets/sketch.jpg', 'GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)', 'Architectural freehand perspective sketch highlighting modern cantilevered volumes, integrated green balconies, and public realm interaction.')">
-          <img src="assets/sketch.jpg" alt="Intro image" class="cover-single-img">
+        <!-- Single Cover Image Fitted Edge-to-Edge -->
+        <div class="cover-single-wrapper" onclick="openLightbox('assets/sketch.jpg', 'MODERN CANTILEVERED RESIDENTIAL SKETCH', 'Architectural freehand perspective sketch highlighting modern cantilevered volumes, integrated green balconies, and public realm interaction.')">
+          <img src="assets/sketch.jpg" alt="Architectural Perspective Sketch" class="cover-single-img">
           <div class="drawing-hover-overlay">
             <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Sketch</span>
           </div>
         </div>
-        <div class="cover-accent-stripe"></div>
       </div>
     </div>
   </section>
 
-  <!-- Profile & Personal Specifications Summary -->
+  <!-- Profile Summary -->
   <section class="section about-section" id="about">
     <div class="container">
       <div class="section-header text-center">
@@ -141,53 +140,52 @@
     </div>
   </section>
 
-  <!-- Project Page 01: B/W Overview Layout (Reference: Image 01) -->
+<!-- Project Page 01: Proposed Residential House Working Drawings Sheet -->
   <section class="behance-project-section" id="projects">
     <div class="container" id="project-overview">
       <div class="project-page-card">
-        <div class="project-page-grid project-page-grid--full">
-          
-          <!-- Left Column: Details & Description -->
-          <div class="project-page-left">
-            <div class="project-page-number">01</div>
-            <h2 class="project-page-title">AUTOCAD & REVIT - ARCHITECTURAL AND STRUCTURAL MODELLING</h2>
 
-            <div class="project-spec-block">
-              <p><strong>Project:</strong> Residential Building & Working Drawings Package</p>
-              <p><strong>Location:</strong> Kozhikode, Kerala, India.</p>
+        <!-- Section Header -->
+        <div class="project-page-header">
+          <div class="project-page-number">01</div>
+          <h2 class="project-page-title">AUTOCAD & REVIT — PROPOSED RESIDENTIAL HOUSE WORKING DRAWINGS SHEET</h2>
+          <p class="render-sub-desc">Comprehensive municipal drawing package detailing Front Elevation, Cross Section AA, Ground Floor Plan, and First Floor Plan (Panniyankara, Calicut)</p>
+        </div>
+
+        <div class="render-hero-display">
+          <div class="render-full-image-box" onclick="openLightbox('assets/building_plan_overview.png', '01 PROPOSED RESIDENTIAL HOUSE — WORKING DRAWINGS SHEET', 'Complete 2D CAD architectural sheet showing Front Elevation, Cross Section AA, Ground Floor Plan, First Floor Plan, and site location specifications at Panniyankara, Calicut.')">
+            <div class="render-image-backdrop">
+              <div class="render-facade-graphic">
+                <img src="assets/building_plan_overview.png" alt="Building Plan of Proposed Residential House" class="render-facade-img">
+              </div>
             </div>
-
-            <div class="project-body-text">
-              <p>
-                The Residential Building project envisions a modern, contemporary multi-level home integrating living, dining, private courtyard, and circulation spaces within a unified architectural framework. The design features dedicated living floor levels (+45 LVL) complemented by double-height voids and open terrace relaxation zones, fostering a dynamic spatial environment.
-              </p>
-              <p>
-                Developed as part of practical architectural training, this project explored CAD & Revit-based architectural modeling, 2D sectional drafting, industrial staircase geometry, and lintel/slab construction details to simulate a real-world development process.
-              </p>
-            </div>
-
-            <div class="project-tags-group">
-              <span class="maroon-tag">AutoCAD 2D</span>
-              <span class="maroon-tag">Revit Arch</span>
-              <span class="maroon-tag">Sectional Drafting</span>
-              <span class="maroon-tag">Construction Details</span>
+            <div class="render-inspect-overlay">
+              <button class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-expand"></i> Inspect High-Res Working Drawings
+              </button>
             </div>
           </div>
-
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Project Page 02: Multi-View B/W Sheet Layout (Reference: Image 02) -->
+  <!-- Project Page 02: Multi-View B/W Sheet Layout -->
   <section class="behance-project-section" id="project-multiview">
     <div class="container">
       <div class="project-multiview-card">
-        <div class="multiview-grid">
-          
-          <!-- Left Column: Vertical Section AA Drawing -->
+
+        <div class="project-page-header">
+          <div class="project-page-number">02</div>
+          <h2 class="project-page-title">AUTOCAD — SECTIONS & ELEVATIONS DETAIL SHEET</h2>
+          <p class="render-sub-desc">Longitudinal cross-section AA and side elevations detailing spatial volumes, staircase specifications, and exterior window schedules</p>
+        </div>
+
+        <div class="multiview-grid mt-4">
+
           <div class="multiview-col-left">
-            <div class="drawing-card-box" onclick="openLightbox('assets/section_aa.png', 'RESIDENTIAL SPATIAL VOLUME & CIRCULATION (SECTION AA)', 'Longitudinal cross-section detailing staircase specifications (W: 100cm, T: 25cm, R: 17.5cm), double height void, passage levels, and bay window projections.')">
+            <div class="drawing-card-box" onclick="openLightbox('assets/section_aa.png', '02 RESIDENTIAL SPATIAL VOLUME & CIRCULATION (SECTION AA)', 'Longitudinal cross-section detailing staircase specifications (W: 100cm, T: 25cm, R: 17.5cm), double height void, passage levels, and bay window projections.')">
               <img src="assets/section_aa.png" alt="Section AA Floor & Roof Plan" class="multiview-img vertical">
               <div class="drawing-hover-overlay">
                 <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Section AA</span>
@@ -196,12 +194,10 @@
             <h4 class="maroon-caption">SECTION ON AA — STAIRCASE & SPATIAL VOLUME</h4>
           </div>
 
-          <!-- Right Column: Isometric & 3D Elevation Views -->
           <div class="multiview-col-right">
-            
-            <!-- Top Right: North Elevation -->
+
             <div class="multiview-block">
-              <div class="drawing-card-box" onclick="openLightbox('assets/elevation_north.png', 'NORTH SIDE ARCHITECTURAL ELEVATION', 'Detailed North Side Elevation drawing featuring 430cm wide full-height courtyard glazing, side courtyard area, sit-out slab (+500 LVL), and parapet terrace details.')">
+              <div class="drawing-card-box" onclick="openLightbox('assets/elevation_north.png', '02 NORTH SIDE ARCHITECTURAL ELEVATION', 'Detailed North Side Elevation drawing featuring 430cm wide full-height courtyard glazing, side courtyard area, sit-out slab (+500 LVL), and parapet terrace details.')">
                 <img src="assets/elevation_north.png" alt="Isometric View - North Elevation" class="multiview-img horizontal">
                 <div class="drawing-hover-overlay">
                   <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect North Elevation</span>
@@ -210,9 +206,8 @@
               <h4 class="maroon-caption text-right">NORTH ELEVATION — COURTYARD GLAZING FACADE</h4>
             </div>
 
-            <!-- Bottom Right: South Elevation -->
             <div class="multiview-block">
-              <div class="drawing-card-box" onclick="openLightbox('assets/elevation_south.png', 'SOUTH SIDE ARCHITECTURAL ELEVATION', 'Longitudinal South Side Elevation drawing detailing window opening schedules (203cm & 60cm openings), vertical stair glass volume (280cm), rear open terrace, and sit-out pillar.')">
+              <div class="drawing-card-box" onclick="openLightbox('assets/elevation_south.png', '02 SOUTH SIDE ARCHITECTURAL ELEVATION', 'Longitudinal South Side Elevation drawing detailing window opening schedules (203cm & 60cm openings), vertical stair glass volume (280cm), rear open terrace, and sit-out pillar.')">
                 <img src="assets/elevation_south.png" alt="3D View - South Elevation" class="multiview-img horizontal">
                 <div class="drawing-hover-overlay">
                   <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect South Elevation</span>
@@ -224,16 +219,17 @@
           </div>
 
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Project Page 02: Master Bedroom Interior Design & 2D Plan Package -->
+  <!-- Project Page 03: Master Bedroom Interior Design & 2D Plan Package -->
   <section class="behance-project-section" id="project-bedroom">
     <div class="container">
       <div class="project-page-card">
         <div class="project-page-header">
-          <div class="project-page-number">02</div>
+          <div class="project-page-number">03</div>
           <h2 class="project-page-title">INTERIOR DESIGN & 3D VISUALIZATION — MASTER BEDROOM PACKAGE</h2>
           <div class="project-spec-block">
             <p><strong>Project:</strong> Residential Master Bedroom Interior Design & 2D CAD Layout (406 x 351 CM)</p>
@@ -242,10 +238,9 @@
         </div>
 
         <div class="bedroom-grid">
-          
-          <!-- Left Column: 2D CAD Bedroom Floor Plan -->
+
           <div class="bedroom-plan-col">
-            <div class="dashed-drawing-box" onclick="openLightbox('assets/bedroom_plan.png', '02 2D CAD BEDROOM FLOOR PLAN (406 x 351 CM)', 'Detailed 2D CAD floor plan detailing bedroom dimensions (406x351cm), balcony (173x150cm), custom wardrobes, study table with dressing, side tables, and door swings.')">
+            <div class="dashed-drawing-box" onclick="openLightbox('assets/bedroom_plan.png', '03 2D CAD BEDROOM FLOOR PLAN (406 x 351 CM)', 'Detailed 2D CAD floor plan detailing bedroom dimensions (406x351cm), balcony (173x150cm), custom wardrobes, study table with dressing, side tables, and door swings.')">
               <img src="assets/bedroom_plan.png" alt="2D CAD Bedroom Floor Plan" class="bedroom-plan-img">
               <div class="drawing-hover-overlay">
                 <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View HD 2D CAD Plan</span>
@@ -254,12 +249,10 @@
             <span class="drawing-sub-caption">2D CAD FLOOR PLAN — DIMENSIONS 406 x 351 CM & BALCONY LAYOUT</span>
           </div>
 
-          <!-- Right Column: 4 Corresponding 3D Photorealistic Renders (2x2 Grid) -->
           <div class="bedroom-renders-col">
             <div class="bedroom-renders-grid">
-              
-              <!-- Render 1 -->
-              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_1.jpg', 'MASTER BEDROOM INTERIOR — VIEW 01 (VANITY & WARDROBE)', 'Photorealistic 3D interior render showing master bed, custom wood wardrobe, illuminated dressing console with oval mirror, and wooden ceiling fan.')">
+
+              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_1.jpg', '03 MASTER BEDROOM INTERIOR — VIEW 01 (VANITY & WARDROBE)', 'Photorealistic 3D interior render showing master bed, custom wood wardrobe, illuminated dressing console with oval mirror, and wooden ceiling fan.')">
                 <img src="assets/bedroom_render_1.jpg" alt="Master Bedroom 3D Render View 1" class="bedroom-render-img">
                 <div class="drawing-hover-overlay">
                   <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 01</span>
@@ -267,8 +260,7 @@
                 <span class="render-mini-label">VIEW 01 — DRESSING & WARDROBE</span>
               </div>
 
-              <!-- Render 2 -->
-              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_2.jpg', 'MASTER BEDROOM INTERIOR — VIEW 02 (BACKLIT VANITY CONSOLE)', 'Detailed 3D interior render highlighting the backlit oval dressing mirror, open storage shelves, custom wood paneling, and brass handles.')">
+              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_2.jpg', '03 MASTER BEDROOM INTERIOR — VIEW 02 (BACKLIT VANITY CONSOLE)', 'Detailed 3D interior render highlighting the backlit oval dressing mirror, open storage shelves, custom wood paneling, and brass handles.')">
                 <img src="assets/bedroom_render_2.jpg" alt="Master Bedroom 3D Render View 2" class="bedroom-render-img">
                 <div class="drawing-hover-overlay">
                   <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 02</span>
@@ -276,8 +268,7 @@
                 <span class="render-mini-label">VIEW 02 — BACKLIT VANITY CONSOLE</span>
               </div>
 
-              <!-- Render 3 -->
-              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_3.jpg', 'MASTER BEDROOM INTERIOR — VIEW 03 (BED & LANDSCAPE PAINTING)', 'Photorealistic 3D interior render showing bed, side table, landscape artwork, and full-height custom wooden wardrobe unit.')">
+              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_3.jpg', '03 MASTER BEDROOM INTERIOR — VIEW 03 (BED & LANDSCAPE PAINTING)', 'Photorealistic 3D interior render showing bed, side table, landscape artwork, and full-height custom wooden wardrobe unit.')">
                 <img src="assets/bedroom_render_3.jpg" alt="Master Bedroom 3D Render View 3" class="bedroom-render-img">
                 <div class="drawing-hover-overlay">
                   <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 03</span>
@@ -285,8 +276,7 @@
                 <span class="render-mini-label">VIEW 03 — BED & ARTWORK WALL</span>
               </div>
 
-              <!-- Render 4 -->
-              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_4.jpg', 'MASTER BEDROOM INTERIOR — VIEW 04 (BALCONY & WINDOW VIEW)', 'Photorealistic 3D interior render showing master bed, side table, window with sheer curtains, air conditioner, and balcony door layout.')">
+              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_4.jpg', '03 MASTER BEDROOM INTERIOR — VIEW 04 (BALCONY & WINDOW VIEW)', 'Photorealistic 3D interior render showing master bed, side table, window with sheer curtains, air conditioner, and balcony door layout.')">
                 <img src="assets/bedroom_render_4.jpg" alt="Master Bedroom 3D Render View 4" class="bedroom-render-img">
                 <div class="drawing-hover-overlay">
                   <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 04</span>
@@ -302,27 +292,28 @@
     </div>
   </section>
 
-  <!-- Project Page 03: Full-Bleed Colorful 3D Render Showcase (Reference: Image 03) -->
-  <section class="behance-render-section" id="project-render">
+<!-- Project Page 04: Electrical Floor Plan Layout Section -->
+  <section class="behance-render-section" id="project-electrical">
     <div class="container">
       <div class="render-card-wrapper">
-        <div class="render-header text-center">
-          <span class="maroon-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> 3DS MAX & V-RAY VISUALIZATION</span>
-          <h2 class="render-main-title">PHOTOREALISTIC EXTERIOR ARCHITECTURAL RENDERS</h2>
-          <p class="render-sub-desc">V-Ray Lighting scenes, Daylight simulation, Material Texturing & Exterior Environment Renders</p>
+
+        <div class="project-page-header">
+          <div class="project-page-number">04</div>
+          <span class="maroon-badge"><i class="fa-solid fa-bolt"></i> ELECTRICAL LAYOUT DETAILS</span>
+          <h2 class="render-main-title mt-2">GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)</h2>
+          <p class="render-sub-desc">Comprehensive electrical layout detailing switch boards, lighting points, CCTV, exhaust fans, water purifier, and distribution board legends</p>
         </div>
 
         <div class="render-hero-display">
-          <div class="render-full-image-box" onclick="openLightbox('assets/exterior_render_full.jpg', 'PHOTOREALISTIC ARCHITECTURAL EXTERIOR VISUALIZATION', 'Full single page architectural 3D exterior rendering created with 3ds Max & V-Ray featuring photorealistic lighting, materials, paving, landscaping, and vehicle integration.')">
+          <div class="render-full-image-box" onclick="openLightbox('assets/electrical_drawing_uploaded.jpg', '04 GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)', 'Detailed electrical working drawing showing Ground Floor & First Floor Layouts with complete Symbol/Code tables for Ceiling Fans, LED Panel Lights, Tube Lights, CCTV, AC Units, Distribution Boards, and Wall Fittings.')">
             <div class="render-image-backdrop">
               <div class="render-facade-graphic">
-                <img src="assets/exterior_render_full.jpg" alt="Photorealistic Architectural 3D Exterior Render" class="render-facade-img">
-                <div class="render-glass-reflection"></div>
+                <img src="assets/electrical_drawing_uploaded.jpg" alt="Ground & First Floor Plan Electrical Layout" class="render-facade-img">
               </div>
             </div>
             <div class="render-inspect-overlay">
               <button class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-expand"></i> Inspect High-Res Render
+                <i class="fa-solid fa-expand"></i> Inspect High-Res Electrical Layout
               </button>
             </div>
           </div>
@@ -332,26 +323,70 @@
     </div>
   </section>
 
-  <!-- Electrical Floor Plan Layout Section (After 3D Photorealistic Exterior Render) -->
-  <section class="behance-render-section" id="project-electrical">
+  <!-- Project Page 05: Master Bedroom Toilet & Vanity Plumbing Details -->
+  <section class="behance-project-section" id="project-plumbing">
+    <div class="container">
+      <div class="project-multiview-card">
+
+        <div class="project-page-header">
+          <div class="project-page-number">05</div>
+          <span class="maroon-badge"><i class="fa-solid fa-faucet-drip"></i> PLUMBING & SANITARY WORKING DRAWINGS</span>
+          <h2 class="render-main-title mt-2">MASTER BEDROOM TOILET & VANITY PLUMBING DETAILS</h2>
+          <p class="render-sub-desc">Detailed 2D CAD plumbing elevations, toilet floor layout (240x150 CM), four-wall interior view directions, and washbasin vanity specifications</p>
+        </div>
+
+        <div class="multiview-grid mt-4">
+
+          <!-- Left Column: Wash Basin Vanity Detail -->
+          <div class="multiview-col-left">
+            <div class="drawing-card-box" onclick="openLightbox('assets/plum1.jpg', '05 WASH BASIN VANITY ELEVATION & PLAN', 'Detailed CAD elevation and plan drawing of the washbasin vanity, counter top, mirror light fixture, round vanity mirror, ring towel rail, and shelving layout.')">
+              <img src="assets/plum1.jpg" alt="Wash Basin Vanity Elevation and Plan" class="multiview-img vertical">
+              <div class="drawing-hover-overlay">
+                <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Vanity Details</span>
+              </div>
+            </div>
+            <h4 class="maroon-caption">VANITY ELEVATION & COUNTERTOP PLAN</h4>
+          </div>
+
+          <!-- Right Column: Full Toilet Plumbing Package -->
+          <div class="multiview-col-right">
+            <div class="drawing-card-box" onclick="openLightbox('assets/plum2.jpg', '05 M.BEDROOM TOILET PLUMBING DETAILS (GF-MB-T1)', 'Comprehensive working drawing sheet displaying West, East, North, and South wall elevations with fall ceiling (+240 lvl), shower height, ledge wall, WHC positions, and 240x150cm floor plan.')">
+              <img src="assets/plum2.jpg" alt="Master Bedroom Toilet Plumbing Details Sheet" class="multiview-img vertical">
+              <div class="drawing-hover-overlay">
+                <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Full Plumbing Sheet</span>
+              </div>
+            </div>
+            <h4 class="maroon-caption text-right">4-WALL ELEVATIONS & TOILET LAYOUT PLAN (240 x 150 CM)</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Page 06: Full-Bleed 3D Render Showcase -->
+  <section class="behance-render-section" id="project-render">
     <div class="container">
       <div class="render-card-wrapper">
-        <div class="render-header text-center">
-          <span class="maroon-badge"><i class="fa-solid fa-bolt"></i> ELECTRICAL LAYOUT DETAILS</span>
-          <h2 class="render-main-title">GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)</h2>
-          <p class="render-sub-desc">Comprehensive electrical layout detailing switch boards, lighting points, CCTV, exhaust fans, water purifier, and distribution board legends</p>
+
+        <div class="project-page-header">
+          <div class="project-page-number">06</div>
+          <span class="maroon-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> 3DS MAX & V-RAY VISUALIZATION</span>
+          <h2 class="render-main-title mt-2">PHOTOREALISTIC EXTERIOR ARCHITECTURAL RENDERS</h2>
+          <p class="render-sub-desc">V-Ray Lighting scenes, Daylight simulation, Material Texturing & Exterior Environment Renders</p>
         </div>
 
         <div class="render-hero-display">
-          <div class="render-full-image-box" onclick="openLightbox('assets/electrical_drawing_uploaded.jpg', 'GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)', 'Detailed electrical working drawing showing Ground Floor & First Floor Layouts with complete Symbol/Code tables for Ceiling Fans, LED Panel Lights, Tube Lights, CCTV, AC Units, Distribution Boards, and Wall Fittings.')">
+          <div class="render-full-image-box" onclick="openLightbox('assets/exterior_render_full.jpg', '06 PHOTOREALISTIC ARCHITECTURAL EXTERIOR VISUALIZATION', 'Full single page architectural 3D exterior rendering created with 3ds Max & V-Ray featuring photorealistic lighting, materials, paving, landscaping, and vehicle integration.')">
             <div class="render-image-backdrop">
               <div class="render-facade-graphic">
-                <img src="assets/electrical_drawing_uploaded.jpg" alt="Ground & First Floor Plan Electrical Layout" class="render-facade-img">
+                <img src="assets/exterior_render_full.jpg" alt="Photorealistic Architectural 3D Exterior Render" class="render-facade-img">
               </div>
             </div>
             <div class="render-inspect-overlay">
               <button class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-expand"></i> Inspect High-Res Electrical Layout
+                <i class="fa-solid fa-expand"></i> Inspect High-Res Render
               </button>
             </div>
           </div>
@@ -460,8 +495,6 @@
       </div>
 
       <div class="skills-grid">
-        
-        <!-- Technical Software Skills -->
         <div class="skills-category-card">
           <div class="category-header">
             <div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div>
@@ -518,49 +551,23 @@
           </div>
         </div>
 
-        <!-- Architectural Drafting Expertise -->
         <div class="skills-category-card">
           <div class="category-header">
             <div class="category-icon"><i class="fa-solid fa-draw-polygon"></i></div>
             <h3>Drafting & Architectural Knowledge</h3>
           </div>
           <div class="skill-chip-group">
-            <div class="skill-chip">
-              <i class="fa-solid fa-check"></i>
-              <span>Architectural Drawings</span>
-            </div>
-            <div class="skill-chip">
-              <i class="fa-solid fa-check"></i>
-              <span>Working Drawings</span>
-            </div>
-            <div class="skill-chip">
-              <i class="fa-solid fa-check"></i>
-              <span>Floor Plans</span>
-            </div>
-            <div class="skill-chip">
-              <i class="fa-solid fa-check"></i>
-              <span>Elevations</span>
-            </div>
-            <div class="skill-chip">
-              <i class="fa-solid fa-check"></i>
-              <span>Structural Sections</span>
-            </div>
-            <div class="skill-chip">
-              <i class="fa-solid fa-check"></i>
-              <span>Construction Details</span>
-            </div>
-            <div class="skill-chip">
-              <i class="fa-solid fa-check"></i>
-              <span>Site Layouts & Planning</span>
-            </div>
-            <div class="skill-chip">
-              <i class="fa-solid fa-check"></i>
-              <span>Staircase Geometry & Detailing</span>
-            </div>
+            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Architectural Drawings</span></div>
+            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Working Drawings</span></div>
+            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Floor Plans</span></div>
+            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Elevations</span></div>
+            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Structural Sections</span></div>
+            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Construction Details</span></div>
+            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Site Layouts & Planning</span></div>
+            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Staircase Geometry & Detailing</span></div>
           </div>
         </div>
 
-        <!-- Soft Skills & Languages -->
         <div class="skills-category-card">
           <div class="category-header">
             <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
@@ -577,22 +584,12 @@
 
             <h4 class="mt-4">Languages Spoken</h4>
             <div class="languages-list">
-              <div class="lang-item">
-                <span class="lang-name">Malayalam</span>
-                <span class="lang-level fluent">Fluent (Native)</span>
-              </div>
-              <div class="lang-item">
-                <span class="lang-name">English</span>
-                <span class="lang-level proficient">Proficient</span>
-              </div>
-              <div class="lang-item">
-                <span class="lang-name">Hindi</span>
-                <span class="lang-level basic">Basic</span>
-              </div>
+              <div class="lang-item"><span class="lang-name">Malayalam</span><span class="lang-level fluent">Fluent (Native)</span></div>
+              <div class="lang-item"><span class="lang-name">English</span><span class="lang-level proficient">Proficient</span></div>
+              <div class="lang-item"><span class="lang-name">Hindi</span><span class="lang-level basic">Basic</span></div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -606,8 +603,6 @@
       </div>
 
       <div class="education-grid">
-
-        <!-- 1. Diploma in Architecture -->
         <div class="edu-card featured-edu">
           <div class="edu-badge-icon"><i class="fa-solid fa-award"></i></div>
           <div class="edu-content">
@@ -619,7 +614,6 @@
           </div>
         </div>
 
-        <!-- 2. Autodesk 3ds Max with V-Ray Certification -->
         <div class="edu-card">
           <div class="edu-badge-icon"><i class="fa-solid fa-cube"></i></div>
           <div class="edu-content">
@@ -630,7 +624,6 @@
           </div>
         </div>
 
-        <!-- 3. Autodesk AutoCAD Certification -->
         <div class="edu-card">
           <div class="edu-badge-icon"><i class="fa-solid fa-vector-square"></i></div>
           <div class="edu-content">
@@ -641,7 +634,6 @@
           </div>
         </div>
 
-        <!-- 4. Revit Architecture Certification -->
         <div class="edu-card">
           <div class="edu-badge-icon"><i class="fa-solid fa-building"></i></div>
           <div class="edu-content">
@@ -652,7 +644,6 @@
           </div>
         </div>
 
-        <!-- 5. Master Diploma in Building Designing -->
         <div class="edu-card">
           <div class="edu-badge-icon"><i class="fa-solid fa-certificate"></i></div>
           <div class="edu-content">
@@ -663,7 +654,6 @@
           </div>
         </div>
 
-        <!-- 6. Higher Secondary Education -->
         <div class="edu-card">
           <div class="edu-badge-icon"><i class="fa-solid fa-school"></i></div>
           <div class="edu-content">
@@ -673,12 +663,11 @@
             <p class="edu-board">Kerala Board of Higher Secondary Education</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Contact & Footprint Section -->
+  <!-- Contact Section -->
   <section class="section contact-section" id="contact">
     <div class="container">
       <div class="section-header text-center">
@@ -688,8 +677,6 @@
       </div>
 
       <div class="contact-grid">
-        
-        <!-- Contact Cards -->
         <div class="contact-info-wrapper">
           <div class="contact-card">
             <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
@@ -722,11 +709,10 @@
           </div>
         </div>
 
-        <!-- Quick Contact Form -->
         <div class="contact-form-container">
           <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
             <h3>Send a Direct Message</h3>
-            
+
             <div class="form-group">
               <label for="senderName"><i class="fa-solid fa-user"></i> Your Name</label>
               <input type="text" id="senderName" required placeholder="Arch. John Doe / Firm Name">
@@ -754,7 +740,6 @@
             <div class="form-status" id="formStatus"></div>
           </form>
         </div>
-
       </div>
     </div>
   </section>
@@ -774,7 +759,7 @@
     </div>
   </footer>
 
-  <!-- Lightbox Modal for HD Drawing View -->
+  <!-- Lightbox Modal -->
   <div class="modal-overlay" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="lightbox-container">
       <div class="lightbox-header">
