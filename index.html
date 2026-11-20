@@ -1,823 +1,680 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!doctype html>
+<html lang="en" data-ground="paper">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ATHUL P | Architectural & 3D Visualization Portfolio</title>
-  <meta name="description" content="Portfolio of Athul P - Junior Architect, Interior Designer, Draftsman & 3D Visualizer based in Kozhikode, Kerala. Certified in Diploma in Architecture, Autodesk 3ds Max with V-Ray, Autodesk AutoCAD, and Revit Architecture.">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Athul P · Junior architect and 3D visualizer</title>
+<meta name="description" content="Portfolio of Athul P, junior architect, draftsman and 3D visualizer in Kozhikode, Kerala. Working drawings, sections, interiors and V-Ray renders.">
+<meta name="theme-color" content="#E8EBE8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23E8EBE8'/><path d='M6 24H26M9 24V11H23V24M9 17H23' stroke='%2315191C' stroke-width='2' fill='none'/><path d='M6 8H26' stroke='%23B92D1C' stroke-width='2.4'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="lib/scrollcraft.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Background Grid Pattern -->
-  <div class="blueprint-grid-bg" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<span data-sc-progress></span>
+<div class="sc-grain" aria-hidden="true"></div>
 
-  <!-- Navigation Bar -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-brand">
-        <span class="brand-symbol"><i class="fa-solid fa-compass-drafting"></i></span>
-        <div class="brand-text">
-          <span class="brand-name">ATHUL P</span>
-          <span class="brand-sub">ARCHITECTURE & 3D VISUALIZATION</span>
-        </div>
-      </a>
+<!-- ============================================================ chrome -->
+<header class="bar" id="bar">
+  <a class="bar__mark" href="#section" aria-label="Athul P, back to the start">
+    <span class="bar__cut" aria-hidden="true"></span>Athul P
+  </a>
+  <nav class="bar__nav" aria-label="Sections">
+    <a href="#section">Section</a>
+    <a href="#model">Model</a>
+    <a href="#drawings">Drawings</a>
+    <a href="#interiors">Interiors</a>
+    <a href="#render">Render</a>
+    <a href="#practice">Practice</a>
+  </nav>
+  <a class="btn btn--accent bar__cta" href="#contact">Start a project</a>
+  <button class="bar__menu" type="button" aria-haspopup="dialog" aria-controls="menu">Index</button>
+</header>
 
-      <nav class="nav-links" id="navLinks">
-        <a href="#about" class="nav-link"><i class="fa-solid fa-user-gear"></i> About</a>
-        <a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Works</a>
-        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
-        <a href="#skills" class="nav-link"><i class="fa-solid fa-sliders"></i> Skills</a>
-        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Certifications</a>
-        <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
-      </nav>
+<dialog class="menu" id="menu" aria-label="Site index">
+  <div class="menu__inner">
+    <button class="icon-btn menu__close" type="button" data-close aria-label="Close index">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <ol class="menu__list">
+      <li><a href="#section">Section</a></li>
+      <li><a href="#model">Model</a></li>
+      <li><a href="#drawings">Drawings</a></li>
+      <li><a href="#interiors">Interiors</a></li>
+      <li><a href="#render">Render</a></li>
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#contact">Start a project</a></li>
+    </ol>
+  </div>
+</dialog>
 
-      <div class="nav-actions">
-        <button id="themeToggle" class="icon-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
-          <i class="fa-solid fa-sun light-icon"></i>
-          <i class="fa-solid fa-moon dark-icon"></i>
-        </button>
+<main id="main">
 
-        <button class="btn btn-outline" id="openCvModalBtn">
-          <i class="fa-solid fa-file-pdf"></i>
-          <span>CV Resume</span>
-        </button>
+  <!-- ============================================== 1 · THE SECTION (peak)
+       Pinned. The visitor's scroll drafts Section AA stroke by stroke. -->
+  <section id="section" class="act-draw" data-sc-act="pin" data-sc-span="4.6" data-ground="paper">
+    <div data-sc-stage class="draw-stage">
+      <div class="draw-stage__grid" aria-hidden="true"></div>
 
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <h1 class="hero-name"><span class="hero-name__in">Athul P</span></h1>
+
+      <div class="draw-stage__sheet">
+        <svg class="aa" id="aa" viewBox="190 62 612 390" role="img" aria-labelledby="aaTitle aaDesc">
+          <title id="aaTitle">Section on AA</title>
+          <desc id="aaDesc">A vector redraw of Athul's Section AA: a two-storey house cut through its industrial staircase, with level datums from ground level to plus 780, walls, slabs, a double-height void, bay windows and dimensions.</desc>
+          <defs>
+            <pattern id="hatch" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <line x1="0" y1="0" x2="0" y2="2.4" class="hatch-line"/>
+            </pattern>
+            <clipPath id="datumClip"><rect id="datumClipRect" x="190" y="62" width="0" height="390"/></clipPath>
+          </defs>
+
+          <!-- 0 · ground line and datums: drawn on load -->
+          <g class="ln ln--gl" data-draw="intro">
+            <line x1="196" y1="367.3" x2="794" y2="367.3"/>
+          </g>
+          <g class="ln ln--datum" clip-path="url(#datumClip)" data-sweep="intro">
+            <line x1="196" y1="76.8" x2="794" y2="76.8"/>
+            <line x1="196" y1="105" x2="794" y2="105"/>
+            <line x1="196" y1="150.8" x2="794" y2="150.8"/>
+            <line x1="196" y1="228.3" x2="794" y2="228.3"/>
+            <line x1="196" y1="274" x2="794" y2="274"/>
+            <line x1="196" y1="351.7" x2="794" y2="351.7"/>
+          </g>
+
+          <!-- 1 · walls and footings -->
+          <g class="ln ln--wall" data-draw="0.02 0.22">
+            <line x1="353.3" y1="367.3" x2="353.3" y2="108.3"/>
+            <line x1="361" y1="367.3" x2="361" y2="108.3"/>
+            <line x1="661.7" y1="367.3" x2="661.7" y2="80.7"/>
+            <line x1="669.3" y1="367.3" x2="669.3" y2="80.7"/>
+            <line x1="487" y1="115" x2="487" y2="80.7"/>
+            <line x1="494.7" y1="115" x2="494.7" y2="80.7"/>
+            <path d="M354 367.3V391L338.5 403.5V409H377.5V403.5L360 391V367.3"/>
+            <path d="M662.3 367.3V391L646.8 403.5V409H685.8V403.5L668.3 391V367.3"/>
+          </g>
+
+          <!-- 2 · slabs, roof, beams, sunshades -->
+          <g class="ln ln--wall" data-draw="0.16 0.38">
+            <rect x="346.7" y="105" width="146.6" height="3.3"/>
+            <rect x="346.7" y="100.5" width="3" height="4.5"/>
+            <rect x="477.3" y="70" width="222.7" height="9.2"/>
+            <rect x="453.3" y="228.3" width="94" height="3.4"/>
+            <rect x="487" y="228.3" width="7.7" height="11.7"/>
+            <rect x="540" y="231.7" width="7.3" height="11"/>
+            <rect x="332.7" y="147.5" width="20.6" height="3.3"/>
+            <rect x="332.7" y="270.7" width="20.6" height="3.3"/>
+            <rect x="669.3" y="242.3" width="31.4" height="3"/>
+            <rect x="361" y="273.3" width="37" height="3.6"/>
+            <line x1="361" y1="351.7" x2="661.7" y2="351.7"/>
+          </g>
+
+          <!-- 3 · the industrial stair -->
+          <g class="ln ln--thin" data-draw="0.32 0.52">
+            <line x1="497" y1="351.7" x2="383.3" y2="275"/>
+            <line x1="489" y1="351.7" x2="380" y2="278"/>
+            <line x1="398" y1="276.7" x2="455" y2="233.3"/>
+            <line x1="401" y1="280" x2="458" y2="236.6"/>
+          </g>
+          <g class="ln ln--tread" data-draw="0.38 0.58">
+            <line x1="485.6" y1="344" x2="496.6" y2="344"/>
+            <line x1="474.3" y1="336.4" x2="485.3" y2="336.4"/>
+            <line x1="462.9" y1="328.7" x2="473.9" y2="328.7"/>
+            <line x1="451.5" y1="321" x2="462.5" y2="321"/>
+            <line x1="440.2" y1="313.4" x2="451.2" y2="313.4"/>
+            <line x1="428.8" y1="305.7" x2="439.8" y2="305.7"/>
+            <line x1="417.5" y1="298" x2="428.5" y2="298"/>
+            <line x1="406.1" y1="290.3" x2="417.1" y2="290.3"/>
+            <line x1="394.7" y1="282.7" x2="405.7" y2="282.7"/>
+            <line x1="398.9" y1="269.5" x2="409.9" y2="269.5"/>
+            <line x1="408.4" y1="262.3" x2="419.4" y2="262.3"/>
+            <line x1="417.9" y1="255" x2="428.9" y2="255"/>
+            <line x1="427.4" y1="247.8" x2="438.4" y2="247.8"/>
+            <line x1="436.8" y1="240.6" x2="447.8" y2="240.6"/>
+          </g>
+          <g class="ln ln--hair" data-draw="0.46 0.62">
+            <line x1="378" y1="277.5" x2="378" y2="351.7"/>
+            <line x1="382" y1="279.4" x2="382" y2="351.7"/>
+            <line x1="386" y1="282.1" x2="386" y2="351.7"/>
+            <line x1="390" y1="284.8" x2="390" y2="351.7"/>
+            <line x1="394" y1="287.5" x2="394" y2="351.7"/>
+            <line x1="398" y1="290.2" x2="398" y2="351.7"/>
+            <line x1="402" y1="292.9" x2="402" y2="351.7"/>
+            <line x1="406" y1="295.6" x2="406" y2="351.7"/>
+          </g>
+
+          <!-- 4 · windows, void, railing, bay windows, grid lines -->
+          <g class="ln ln--thin" data-draw="0.48 0.68">
+            <line x1="357.2" y1="151" x2="357.2" y2="250"/>
+            <line x1="353.3" y1="151" x2="361" y2="151"/>
+            <line x1="353.3" y1="250" x2="361" y2="250"/>
+            <line x1="665.5" y1="245" x2="665.5" y2="351.7"/>
+            <rect x="547.3" y="197.7" width="114.4" height="30.6"/>
+            <rect x="547.3" y="231.7" width="114.4" height="11"/>
+            <rect x="686.7" y="108.3" width="20.6" height="165"/>
+            <rect x="686.7" y="275" width="6.6" height="62.3"/>
+            <path d="M398 266.7H486.7V351.7"/>
+            <path d="M551 209l4-4M553 211l4-4M596 222l4-4M598 224l4-4M648 208l4-4M650 210l4-4"/>
+          </g>
+          <g class="ln ln--hair" data-draw="0.52 0.7">
+            <line x1="494.7" y1="115" x2="494.7" y2="351.7"/>
+            <line x1="547.3" y1="80.7" x2="547.3" y2="197.7"/>
+            <line x1="547.3" y1="242.7" x2="547.3" y2="351.7"/>
+          </g>
+
+          <!-- 5 · dimensions -->
+          <g class="ln ln--dim" data-draw="0.58 0.78">
+            <line x1="294.3" y1="76.8" x2="294.3" y2="367.3"/>
+            <line x1="311" y1="76.8" x2="311" y2="367.3"/>
+            <line x1="364" y1="151" x2="364" y2="250"/>
+            <line x1="364" y1="275" x2="364" y2="351.7"/>
+            <line x1="449.3" y1="108.3" x2="449.3" y2="228.3"/>
+            <line x1="477.7" y1="266.7" x2="477.7" y2="351.7"/>
+            <line x1="638.3" y1="80.7" x2="638.3" y2="228.3"/>
+            <line x1="650.7" y1="121.7" x2="650.7" y2="228.3"/>
+            <line x1="650.7" y1="245" x2="650.7" y2="351.7"/>
+            <line x1="669.3" y1="88.3" x2="700" y2="88.3"/>
+            <line x1="669.3" y1="252.7" x2="700" y2="252.7"/>
+            <line x1="685" y1="345" x2="702" y2="345"/>
+            <path d="M292.5 78.6l3.6-3.6M292.5 353.5l3.6-3.6M292.5 369.1l3.6-3.6M309.2 78.6l3.6-3.6M309.2 106.8l3.6-3.6M309.2 152.6l3.6-3.6M309.2 230.1l3.6-3.6M309.2 275.8l3.6-3.6M309.2 353.5l3.6-3.6M309.2 369.1l3.6-3.6M362.2 152.8l3.6-3.6M362.2 251.8l3.6-3.6M362.2 276.8l3.6-3.6M362.2 353.5l3.6-3.6M447.5 110.1l3.6-3.6M447.5 230.1l3.6-3.6M475.9 268.5l3.6-3.6M475.9 353.5l3.6-3.6M636.5 82.5l3.6-3.6M636.5 230.1l3.6-3.6M648.9 123.5l3.6-3.6M648.9 230.1l3.6-3.6M648.9 246.8l3.6-3.6M648.9 353.5l3.6-3.6M667.5 90.1l3.6-3.6M698.2 90.1l3.6-3.6M667.5 254.5l3.6-3.6M698.2 254.5l3.6-3.6"/>
+          </g>
+
+          <!-- 6 · poché and hatch fills -->
+          <g class="fill fill--solid" data-fade="0.62 0.78">
+            <rect x="346.7" y="105" width="146.6" height="3.3"/>
+            <rect x="477.3" y="76.4" width="222.7" height="2.8"/>
+            <rect x="477.3" y="70" width="3.4" height="9.2"/>
+            <rect x="696.7" y="70" width="3.3" height="9.2"/>
+            <rect x="453.3" y="228.3" width="94" height="3.4"/>
+            <rect x="487" y="228.3" width="7.7" height="11.7"/>
+            <rect x="540" y="231.7" width="7.3" height="11"/>
+            <rect x="332.7" y="147.5" width="20.6" height="3.3"/>
+            <rect x="332.7" y="270.7" width="20.6" height="3.3"/>
+            <rect x="669.3" y="242.3" width="31.4" height="3"/>
+            <rect x="361" y="273.3" width="37" height="3.6"/>
+            <rect x="353.3" y="137" width="7.7" height="13.8"/>
+            <rect x="353.3" y="267" width="7.7" height="7.5"/>
+            <rect x="353.3" y="351.7" width="7.7" height="15.6"/>
+            <rect x="487" y="98.3" width="7.7" height="16.7"/>
+            <rect x="661.7" y="105" width="7.6" height="18.3"/>
+            <rect x="661.7" y="228.3" width="7.6" height="16.7"/>
+            <rect x="661.7" y="351.7" width="7.6" height="15.6"/>
+          </g>
+          <g class="fill fill--hatch" data-fade="0.64 0.8">
+            <rect x="353.3" y="108.3" width="7.7" height="28.7"/>
+            <rect x="353.3" y="250" width="7.7" height="17"/>
+            <rect x="353.3" y="274.5" width="7.7" height="77.2"/>
+            <rect x="487" y="80.7" width="7.7" height="17.6"/>
+            <rect x="661.7" y="80.7" width="7.6" height="24.3"/>
+            <rect x="661.7" y="123.3" width="7.6" height="105"/>
+          </g>
+
+          <!-- 7 · level labels -->
+          <g class="tx tx--level" data-fade="0.66 0.82">
+            <text x="197" y="74.6">FF SEE BELOW SLAB +780 LVL</text>
+            <text x="197" y="102.8">FF SLAB +700 LVL</text>
+            <text x="197" y="148.6">FF LINTEL +570 LVL</text>
+            <text x="197" y="226.1">GF SLAB +350 LVL</text>
+            <text x="197" y="271.8">LINTEL +220 LVL</text>
+            <text x="197" y="349.5">GF FL +45 LVL</text>
+            <text x="197" y="365.1">GL +0.00 LVL</text>
+            <text x="794" y="74.6" text-anchor="end">FF SEE BELOW SLAB +780 LVL</text>
+            <text x="794" y="102.8" text-anchor="end">FF SLAB +700 LVL</text>
+            <text x="794" y="148.6" text-anchor="end">FF LINTEL +570 LVL</text>
+            <text x="794" y="226.1" text-anchor="end">GF SLAB +350 LVL</text>
+            <text x="794" y="271.8" text-anchor="end">LINTEL +220 LVL</text>
+            <text x="794" y="349.5" text-anchor="end">GF FL +45 LVL</text>
+            <text x="794" y="365.1" text-anchor="end">GL +0.00 LVL</text>
+          </g>
+
+          <!-- 8 · dimension figures -->
+          <g class="tx tx--dim" data-fade="0.7 0.84">
+            <text transform="rotate(-90 291.6 214)" x="291.6" y="214" text-anchor="middle">780</text>
+            <text transform="rotate(-90 291.6 359.5)" x="291.6" y="359.5" text-anchor="middle">45</text>
+            <text transform="rotate(-90 308.3 91)" x="308.3" y="91" text-anchor="middle">80</text>
+            <text transform="rotate(-90 308.3 128)" x="308.3" y="128" text-anchor="middle">130</text>
+            <text transform="rotate(-90 308.3 190)" x="308.3" y="190" text-anchor="middle">220</text>
+            <text transform="rotate(-90 308.3 251)" x="308.3" y="251" text-anchor="middle">130</text>
+            <text transform="rotate(-90 308.3 313)" x="308.3" y="313" text-anchor="middle">220</text>
+            <text transform="rotate(-90 308.3 359.5)" x="308.3" y="359.5" text-anchor="middle">45</text>
+            <text transform="rotate(-90 368.2 200)" x="368.2" y="200" text-anchor="middle">280</text>
+            <text transform="rotate(-90 368.2 313)" x="368.2" y="313" text-anchor="middle">215</text>
+            <text transform="rotate(-90 446.8 168)" x="446.8" y="168" text-anchor="middle">340</text>
+            <text transform="rotate(-90 475.2 309)" x="475.2" y="309" text-anchor="middle">240</text>
+            <text transform="rotate(-90 635.8 154)" x="635.8" y="154" text-anchor="middle">420</text>
+            <text transform="rotate(-90 648.2 175)" x="648.2" y="175" text-anchor="middle">300</text>
+            <text transform="rotate(-90 648.2 298)" x="648.2" y="298" text-anchor="middle">300</text>
+            <text x="684.6" y="86.3" text-anchor="middle">90</text>
+            <text x="684.6" y="250.7" text-anchor="middle">90</text>
+            <text x="693.5" y="343" text-anchor="middle">20</text>
+            <text x="463" y="225.6" text-anchor="middle">20</text>
+            <text x="481.5" y="91" text-anchor="end">30</text>
+            <text x="497" y="349.6" text-anchor="middle">1</text>
+            <text x="455" y="319" text-anchor="middle">6</text>
+          </g>
+
+          <!-- 9 · notes -->
+          <g class="tx tx--note" data-fade="0.74 0.88">
+            <text x="366" y="269.6">+227.50 LVL</text>
+            <text x="444" y="293.2">Industrial stair</text>
+            <text x="412" y="322.4" class="tx-strong">Stair details</text>
+            <text x="412" y="328.6">W-100 cm</text>
+            <text x="412" y="334.4">T-25 cm</text>
+            <text x="412" y="340.2">R-17.50 cm</text>
+            <text x="503" y="226.3">FF Passage +350 lvl</text>
+            <text x="604.5" y="239.6" text-anchor="middle">See below area</text>
+            <text x="604.5" y="349.4" text-anchor="middle">Living/Dining +0.00 lvl</text>
+            <text x="708" y="240.2">Courtyard projection slab +310 lvl</text>
+            <text x="712" y="184">FF Bedroom bay window</text>
+            <text x="714" y="190.2">projection 60 cm</text>
+            <text x="699" y="302">Kitchen bay window</text>
+            <text x="700" y="308.2">projection 20 cm</text>
+          </g>
+          <g class="ln ln--dim" data-draw="0.74 0.86">
+            <path d="M428 295c2-2.4 4-2.4 6 0s4 2.4 6 0"/>
+            <line x1="700" y1="188.5" x2="711" y2="188.5"/>
+          </g>
+
+          <!-- 10 · title -->
+          <g class="ln ln--thin" data-draw="0.8 0.9">
+            <rect x="458" y="423" width="125" height="21"/>
+          </g>
+          <g class="tx tx--title" data-fade="0.84 0.92">
+            <text x="520.5" y="437.4" text-anchor="middle">SECTION ON AA</text>
+          </g>
+          <g class="ln ln--red" data-draw="0.88 0.96">
+            <line x1="470" y1="448.6" x2="571" y2="448.6"/>
+          </g>
+
+          <!-- the pen: rides the tip of whichever line is being drawn -->
+          <g class="pen" id="pen" aria-hidden="true">
+            <circle r="2.4"/>
+            <path d="M-5 0H-3.2M3.2 0H5M0 -5V-3.2M0 3.2V5"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="sc-copy sc-copy--lead draw-copy" data-sc-cue="0 0.2 0">
+        <p class="hero-role">Junior architect and 3D visualizer. Kozhikode, Kerala.</p>
+      </div>
+      <div class="sc-copy sc-copy--lead draw-copy" data-sc-cue="0.16 0.46 0.05 0.07">
+        <p class="sc-lede">Every building I draw starts as one line. Keep scrolling: you are drawing this one.</p>
+      </div>
+      <div class="sc-copy sc-copy--lead draw-copy" data-sc-cue="0.42 0.72 0.05 0.07">
+        <p class="sc-lede">Datums, walls, slabs. Then an industrial stair, 100&nbsp;cm wide, 25&nbsp;cm treads, 17.5&nbsp;cm risers.</p>
+      </div>
+      <div class="sc-copy sc-copy--lead draw-copy" data-sc-cue="0.68 1 0.12 0.1">
+        <p class="sc-label">Section on AA</p>
+        <p class="sc-lede">Staircase and spatial volume of a two-storey house, redrawn line for line from Athul's working drawing.</p>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Hero / Cover Page Section -->
-  <section class="hero-behance-section" id="hero">
-    <div class="behance-cover-container">
-      <div class="behance-cover-left">
-        <div class="cover-brand-header">
-          <h1 class="cover-portfolio-title">ARCHITECTURAL PORTFOLIO</h1>
-          <h2 class="cover-author-name">ATHUL P</h2>
-          <p class="cover-author-role">JUNIOR ARCHITECT & 3D VISUALIZER</p>
-        </div>
-
-        <div class="cover-meta-pills">
-          <span class="cover-pill"><i class="fa-solid fa-location-dot"></i> Kozhikode, Kerala, India</span>
-        </div>
-
-        <div class="cover-cta-row">
-          <a href="#project-overview" class="btn btn-primary">
-            <i class="fa-solid fa-arrow-down-long"></i> View Projects
-          </a>
-          <button class="btn btn-secondary" onclick="openCvModal()">
-            <i class="fa-solid fa-eye"></i> Preview CV
-          </button>
-          <a href="assets/athul_cv.pdf" download class="btn btn-outline">
-            <i class="fa-solid fa-download"></i> Download PDF
-          </a>
-        </div>
+  <!-- ============================================== 2 · THE MODEL (3D)  -->
+  <section id="model" class="act-model" data-sc-act="flow" data-ground="paper">
+    <div class="model">
+      <div class="model__copy sc-stack" data-sc-in data-sc-stagger="70">
+        <h2 class="sc-display sc-display--lg">Then it stands up.</h2>
+        <p class="sc-body">The same house as a massing study, built by combining Section AA with the longitudinal Section PQ and the north elevation. The red plane is where the drawing you just made was cut.</p>
+        <p class="sc-label model__hint"><span class="hint-fine">Drag to turn the model</span><span class="hint-touch">Swipe sideways to turn the model</span></p>
       </div>
+      <div class="model__view" id="modelView" aria-label="Interactive 3D massing model of the house. Drag to rotate." role="img">
+        <canvas id="modelCanvas"></canvas>
+        <div class="model__tags" id="modelTags" aria-hidden="true">
+          <span data-tag="780">+780</span>
+          <span data-tag="700">+700</span>
+          <span data-tag="350">+350</span>
+          <span data-tag="45">+45 GF FL</span>
+          <span data-tag="a1" class="tag-cut">A</span>
+          <span data-tag="a2" class="tag-cut">A</span>
+        </div>
+        <img class="model__fallback" src="assets/elevation_north.png" width="1024" height="465" alt="North side elevation of the same house, shown because 3D is unavailable in this browser.">
+      </div>
+    </div>
+  </section>
 
-      <div class="behance-cover-right">
-        <!-- Single Cover Image Fitted Edge-to-Edge -->
-        <div class="cover-single-wrapper" onclick="openLightbox('assets/sketch.jpg', 'MODERN CANTILEVERED RESIDENTIAL SKETCH', 'Architectural freehand perspective sketch highlighting modern cantilevered volumes, integrated green balconies, and public realm interaction.')">
-          <img src="assets/sketch.jpg" alt="Architectural Perspective Sketch" class="cover-single-img">
+  <!-- ============================================== 3 · DRAWINGS (pan) -->
+  <section id="drawings" class="act-sheets" data-sc-act="pan" data-sc-span="4.2" data-ground="paper">
+    <div data-sc-stage class="sheets-stage">
+      <div class="rail" data-sc-pan="0.04">
+        <div class="rail__lead sc-stack">
+          <h2 class="sc-display sc-display--lg">The drawing set.</h2>
+          <p class="sc-body">Working drawings from practice. Open any sheet to read it at full size, zoom and pan.</p>
+        </div>
+
+        <article class="sheet">
+          <button class="sheet__frame" type="button" data-view="assets/building_plan_overview.png" data-title="Building plan, proposed residential house, Calicut Corporation">
+            <img src="assets/building_plan_overview.png" width="2000" height="1326" alt="Municipal approval sheet: front elevation, Section AA, ground and first floor plans." loading="lazy">
+          </button>
+          <h3>Approval sheet</h3>
+          <dl class="label-grid">
+            <dt>Contents</dt><dd>Front elevation, Section AA, ground and first floor plans</dd>
+            <dt>Drawn in</dt><dd>AutoCAD and Revit</dd>
+            <dt>Site</dt><dd>Panniyankara, Calicut</dd>
+          </dl>
+        </article>
+
+        <article class="sheet">
+          <button class="sheet__frame" type="button" data-view="assets/section_aa.png" data-title="Section on AA">
+            <img src="assets/section_aa.png" width="1024" height="463" alt="Original Section AA drawing with staircase, levels and dimensions." loading="lazy">
+          </button>
+          <h3>Section AA</h3>
+          <dl class="label-grid">
+            <dt>Contents</dt><dd>Staircase, spatial volume, level datums</dd>
+            <dt>Drawn in</dt><dd>AutoCAD</dd>
+            <dt>Sheet</dt><dd>The original behind the redraw</dd>
+          </dl>
+        </article>
+
+        <article class="sheet">
+          <button class="sheet__frame" type="button" data-view="assets/section_pq.png" data-title="Section on PQ, longitudinal">
+            <img src="assets/section_pq.png" width="1024" height="469" alt="Longitudinal Section PQ with levels, stair landing at plus 227.50 and room labels." loading="lazy">
+          </button>
+          <h3>Section PQ</h3>
+          <dl class="label-grid">
+            <dt>Contents</dt><dd>Longitudinal levels, staircase landing</dd>
+            <dt>Drawn in</dt><dd>AutoCAD</dd>
+            <dt>Sheet</dt><dd>Longitudinal building section</dd>
+          </dl>
+        </article>
+
+        <article class="sheet">
+          <button class="sheet__frame" type="button" data-view="assets/elevation_north.png" data-title="North side elevation">
+            <img src="assets/elevation_north.png" width="1024" height="465" alt="North side elevation with courtyard glazing and level datums." loading="lazy">
+          </button>
+          <h3>North elevation</h3>
+          <dl class="label-grid">
+            <dt>Contents</dt><dd>Courtyard glazing facade</dd>
+            <dt>Drawn in</dt><dd>AutoCAD</dd>
+            <dt>Sheet</dt><dd>Side elevation</dd>
+          </dl>
+        </article>
+
+        <article class="sheet">
+          <button class="sheet__frame" type="button" data-view="assets/elevation_south.png" data-title="South side elevation">
+            <img src="assets/elevation_south.png" width="1024" height="469" alt="South side elevation with window sizes and stair glazing." loading="lazy">
+          </button>
+          <h3>South elevation</h3>
+          <dl class="label-grid">
+            <dt>Contents</dt><dd>Window schedule, stair glass</dd>
+            <dt>Drawn in</dt><dd>AutoCAD</dd>
+            <dt>Sheet</dt><dd>Side elevation</dd>
+          </dl>
+        </article>
+
+        <article class="sheet">
+          <button class="sheet__frame" type="button" data-view="assets/electrical_drawing_uploaded.jpg" data-title="Ground and first floor plan, electrical layout">
+            <img src="assets/electrical_drawing_uploaded.jpg" width="1024" height="682" alt="Ground and first floor electrical layout with switch boards, lighting points and legend." loading="lazy">
+          </button>
+          <h3>Electrical</h3>
+          <dl class="label-grid">
+            <dt>Contents</dt><dd>Switch boards, lighting points, CCTV, exhaust fans, distribution board legend</dd>
+            <dt>Drawn in</dt><dd>2D CAD</dd>
+            <dt>Sheet</dt><dd>Ground and first floor plan</dd>
+          </dl>
+        </article>
+
+        <article class="sheet">
+          <button class="sheet__frame" type="button" data-view="assets/plum2.jpg" data-title="Master bedroom toilet, plumbing details">
+            <img src="assets/plum2.jpg" width="1280" height="752" alt="Toilet plumbing sheet with four wall elevations and the 240 by 150 cm floor layout." loading="lazy">
+          </button>
+          <h3>Plumbing</h3>
+          <dl class="label-grid">
+            <dt>Contents</dt><dd>Four wall elevations, toilet layout 240 × 150 cm</dd>
+            <dt>Drawn in</dt><dd>2D CAD</dd>
+            <dt>Sheet</dt><dd>Master bedroom toilet</dd>
+          </dl>
+        </article>
+
+        <article class="sheet sheet--tall">
+          <button class="sheet__frame" type="button" data-view="assets/plum1.jpg" data-title="Wash basin vanity, elevation and plan">
+            <img src="assets/plum1.jpg" width="1100" height="1348" alt="Wash basin vanity elevation and countertop plan." loading="lazy">
+          </button>
+          <h3>Vanity</h3>
+          <dl class="label-grid">
+            <dt>Contents</dt><dd>Vanity elevation, countertop plan</dd>
+            <dt>Drawn in</dt><dd>2D CAD</dd>
+            <dt>Sheet</dt><dd>Master bedroom toilet</dd>
+          </dl>
+        </article>
+
+        <div class="rail__end">
+          <p class="sc-lede">Each of these started the way the section did. One line, then the next.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Profile Summary -->
-  <section class="section about-section" id="about">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-subtitle">[ PROFILE SUMMARY ]</span>
-        <h2 class="section-title">Architectural Mindset & Technical Focus</h2>
+  <!-- ============================================== 4 · INTERIORS (reveal) -->
+  <section id="interiors" class="ground-dark act-room sc-section" data-sc-act="flow" data-ground="dark">
+    <div class="sc-wrap room">
+      <div class="room__copy sc-stack" data-sc-in data-sc-stagger="70">
+        <p class="sc-label">Interior design and 3D visualization</p>
+        <h2 class="sc-display sc-display--lg">Master bedroom. 406&nbsp;×&nbsp;351&nbsp;cm.</h2>
+        <p class="sc-body">A 2D CAD layout with a custom wooden wardrobe and a backlit oval dressing vanity, then rendered as the finished room.</p>
       </div>
 
-      <div class="about-grid">
-        <div class="about-card main-summary">
-          <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-          <h3>Summary & Career Objective</h3>
-          <p>
-            Motivated Architecture Diploma graduate seeking an entry-level Junior Architect role. I possess a strong foundation in architectural drafting, 3D visualization, and CAD/Revit workflows backed by multiple hands-on internship experiences at recognized design practices in Calicut.
-          </p>
-          <p>
-            Certified in <strong>Autodesk AutoCAD</strong>, <strong>Revit Architecture</strong>, and <strong>Autodesk 3ds Max with V-Ray Rendering</strong>. Eager to contribute technical drafting precision, spatial creativity, and rigorous attention to detail while continuing to expand professional expertise.
-          </p>
+      <figure class="room__swap">
+        <div class="room__plan">
+          <img src="assets/bedroom_plan.png" width="1024" height="588" alt="2D CAD floor plan of the master bedroom, 406 by 351 cm, with balcony, bed, wardrobe and study table." loading="lazy">
         </div>
+        <span class="room__edge" id="roomEdge" aria-hidden="true"></span>
+        <div class="room__render" id="roomWipe">
+          <img src="assets/bedroom_render_2.jpg" width="1024" height="576" alt="Render of the same bedroom: wooden wardrobe with a backlit oval vanity mirror." loading="lazy">
+        </div>
+        <figcaption class="sc-label">The plan becomes the room. Backlit vanity console.</figcaption>
+      </figure>
 
-        <div class="about-card key-details">
-          <div class="card-icon"><i class="fa-solid fa-address-card"></i></div>
-          <h3>Personal Specifications</h3>
-          <ul class="details-list">
-            <li>
-              <span class="detail-label"><i class="fa-solid fa-flag"></i> Nationality:</span>
-              <span class="detail-val">Indian</span>
-            </li>
-            <li>
-              <span class="detail-label"><i class="fa-solid fa-calendar-day"></i> Date of Birth:</span>
-              <span class="detail-val">27 / 04 / 2004</span>
-            </li>
-            <li>
-              <span class="detail-label"><i class="fa-solid fa-location-crosshairs"></i> Location:</span>
-              <span class="detail-val">Kozhikode, Kerala, India</span>
-            </li>
+      <div class="views" data-sc-in data-sc-stagger="70">
+        <button class="view view--wide" type="button" data-view="assets/bedroom_render_1.jpg" data-title="Dressing and wardrobe">
+          <img src="assets/bedroom_render_1.jpg" width="1024" height="576" alt="Render: dressing area and wardrobe." loading="lazy">
+          <span class="sc-label">Dressing and wardrobe</span>
+        </button>
+        <button class="view" type="button" data-view="assets/bedroom_render_3.jpg" data-title="Bed and artwork wall">
+          <img src="assets/bedroom_render_3.jpg" width="1024" height="576" alt="Render: bed and artwork wall." loading="lazy">
+          <span class="sc-label">Bed and artwork wall</span>
+        </button>
+        <button class="view" type="button" data-view="assets/bedroom_render_4.jpg" data-title="Window and balcony view">
+          <img src="assets/bedroom_render_4.jpg" width="1024" height="576" alt="Render: window and balcony view." loading="lazy">
+          <span class="sc-label">Window and balcony view</span>
+        </button>
+        <button class="view view--plan" type="button" data-view="assets/bedroom_plan.png" data-title="Bedroom plan, 406 × 351 cm">
+          <img src="assets/bedroom_plan.png" width="1024" height="588" alt="Bedroom floor plan, full size." loading="lazy">
+          <span class="sc-label">Plan, 406 × 351 cm</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== 5 · RENDER (parallax) -->
+  <section id="render" class="ground-dark act-render" data-sc-act="flow" data-ground="dark">
+    <div class="render">
+      <div class="render__bed" data-sc-parallax="-1.8">
+        <img src="assets/exterior_render_full.jpg" width="1024" height="576" alt="Photoreal exterior render of a two-storey house with a framed portico, glass balcony and paved forecourt in daylight." loading="lazy">
+      </div>
+      <div class="render__scrim" aria-hidden="true"></div>
+      <div class="render__copy sc-stack" data-sc-in data-sc-stagger="70">
+        <h2 class="sc-display sc-display--xl">From line to light.</h2>
+        <p class="sc-body">Exterior visualization in Autodesk 3ds Max with V-Ray. Daylight simulation, material texturing and environment.</p>
+        <button class="btn btn--ghost" type="button" data-view="assets/exterior_render_full.jpg" data-title="Exterior render, 3ds Max and V-Ray">Open full size</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== 6 · PRACTICE (flow) -->
+  <section id="practice" class="ground-dark act-practice sc-section" data-sc-act="flow" data-ground="dark">
+    <div class="sc-wrap practice">
+
+      <div class="practice__intro">
+        <div class="sc-stack" data-sc-in data-sc-stagger="70">
+          <h2 class="sc-display sc-display--lg">Practice.</h2>
+          <p class="sc-lede">Architecture diploma graduate with hands-on internships at design practices in Calicut.</p>
+          <p class="sc-body">Strong in architectural drafting, 3D visualization and CAD and Revit workflows. Certified in Autodesk AutoCAD, Revit Architecture and 3ds Max with V-Ray rendering. Looking for an entry-level junior architect role, and open to freelance drawing and rendering work.</p>
+        </div>
+        <figure class="sketch" data-sc-in>
+          <img src="assets/sketch.jpg" width="735" height="985" alt="Freehand pencil perspective sketch of a cantilevered building with planting and people on the street." loading="lazy">
+          <figcaption class="sc-label">Freehand perspective sketch</figcaption>
+        </figure>
+      </div>
+
+      <div class="block" data-sc-in>
+        <h3 class="block__title">Schedule of practice</h3>
+        <div class="table-wrap">
+          <table class="sched">
+            <thead><tr><th scope="col">Period</th><th scope="col">Role</th><th scope="col">Practice</th><th scope="col">Scope</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="mono">Aug 2025 – Feb 2026</td><td>Junior Architect</td><td>Design Palette, Calicut</td>
+                <td>2D architectural and structural drawings in AutoCAD. Floor plans, elevations, sections and construction details for execution, kept precise and code compliant with the design leads.</td>
+              </tr>
+              <tr>
+                <td class="mono">Dec 2024 – Jan 2025</td><td>Architectural Intern</td><td>CADD Campus, Calicut</td>
+                <td>Technical drawings and site layouts for residential projects. Basic 3D massing models in SketchUp. Design discussions, client reviews and site observation.</td>
+              </tr>
+              <tr>
+                <td class="mono">Apr 2024 – May 2024</td><td>Architectural Intern</td><td>Saleem Groups / CAD Center, Calicut</td>
+                <td>Working drawings and site plans for residential and commercial projects. Structural and architectural coordination, AutoCAD drafting, SketchUp presentations, site inspections.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="practice__split">
+        <div class="block" data-sc-in>
+          <h3 class="block__title">Tools <span class="block__note">Self-rated</span></h3>
+          <ul class="scales" id="scales">
+            <li style="--v:95"><span class="scales__name">Autodesk AutoCAD</span><span class="scales__val mono">95%</span><span class="scales__bar" aria-hidden="true"></span></li>
+            <li style="--v:90"><span class="scales__name">3ds Max with V-Ray</span><span class="scales__val mono">90%</span><span class="scales__bar" aria-hidden="true"></span></li>
+            <li style="--v:85"><span class="scales__name">Revit Architecture</span><span class="scales__val mono">85%</span><span class="scales__bar" aria-hidden="true"></span></li>
+            <li style="--v:85"><span class="scales__name">SketchUp</span><span class="scales__val mono">85%</span><span class="scales__bar" aria-hidden="true"></span></li>
+            <li style="--v:80"><span class="scales__name">Lumion</span><span class="scales__val mono">80%</span><span class="scales__bar" aria-hidden="true"></span></li>
+            <li style="--v:75"><span class="scales__name">Photoshop</span><span class="scales__val mono">75%</span><span class="scales__bar" aria-hidden="true"></span></li>
           </ul>
         </div>
+        <div class="block" data-sc-in>
+          <h3 class="block__title">Drawing knowledge</h3>
+          <ul class="tags">
+            <li>Architectural drawings</li><li>Working drawings</li><li>Floor plans</li><li>Elevations</li>
+            <li>Structural sections</li><li>Construction details</li><li>Site layouts and planning</li><li>Staircase geometry</li>
+          </ul>
+          <h3 class="block__title block__title--gap">Working</h3>
+          <ul class="tags">
+            <li>Time management</li><li>Problem solving</li><li>Communication</li><li>Attention to detail</li>
+          </ul>
+          <h3 class="block__title block__title--gap">Languages</h3>
+          <dl class="langs">
+            <dt>Malayalam</dt><dd>Native</dd>
+            <dt>English</dt><dd>Proficient</dd>
+            <dt>Hindi</dt><dd>Basic</dd>
+          </dl>
+        </div>
       </div>
-    </div>
-  </section>
 
-<!-- Project Page 01: Proposed Residential House Working Drawings Sheet -->
-  <section class="behance-project-section" id="projects">
-    <div class="container" id="project-overview">
-      <div class="project-page-card">
-
-        <!-- Section Header -->
-        <div class="project-page-header">
-          <div class="project-page-number">01</div>
-          <h2 class="project-page-title">AUTOCAD & REVIT — PROPOSED RESIDENTIAL HOUSE WORKING DRAWINGS SHEET</h2>
-          <p class="render-sub-desc">Comprehensive municipal drawing package detailing Front Elevation, Cross Section AA, Ground Floor Plan, and First Floor Plan (Panniyankara, Calicut)</p>
-        </div>
-
-        <div class="render-hero-display">
-          <div class="render-full-image-box" onclick="openLightbox('assets/building_plan_overview.png', '01 PROPOSED RESIDENTIAL HOUSE — WORKING DRAWINGS SHEET', 'Complete 2D CAD architectural sheet showing Front Elevation, Cross Section AA, Ground Floor Plan, First Floor Plan, and site location specifications at Panniyankara, Calicut.')">
-            <div class="render-image-backdrop">
-              <div class="render-facade-graphic">
-                <img src="assets/building_plan_overview.png" alt="Building Plan of Proposed Residential House" class="render-facade-img">
-              </div>
-            </div>
-            <div class="render-inspect-overlay">
-              <button class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-expand"></i> Inspect High-Res Working Drawings
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-<!-- Project Page 02: Multi-View B/W Sheet Layout -->
-  <section class="behance-project-section" id="project-multiview">
-    <div class="container">
-      <div class="project-multiview-card">
-
-        <div class="project-page-header">
-          <div class="project-page-number">02</div>
-          <h2 class="project-page-title">AUTOCAD — SECTIONS & ELEVATIONS DETAIL SHEET</h2>
-          <p class="render-sub-desc">Comprehensive 2D CAD sectional drawings detailing spatial volumes, staircase levels, vertical clearances, and facade elevations</p>
-        </div>
-
-        <div class="multiview-grid mt-4">
-
-          <!-- Left Column: Section AA & Longitudinal Building Section -->
-          <div class="multiview-col-left">
-
-            <div class="multiview-block mb-4">
-              <div class="drawing-card-box" onclick="openLightbox('assets/section_aa.png', '02 RESIDENTIAL SPATIAL VOLUME & CIRCULATION (SECTION AA)', 'Longitudinal cross-section detailing staircase specifications (W: 100cm, T: 25cm, R: 17.5cm), double height void, passage levels, and bay window projections.')">
-                <img src="assets/section_aa.png" alt="Section AA Floor & Roof Plan" class="multiview-img vertical">
-                <div class="drawing-hover-overlay">
-                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Section AA</span>
-                </div>
-              </div>
-              <h4 class="maroon-caption">SECTION ON AA — STAIRCASE & SPATIAL VOLUME</h4>
-            </div>
-            <br>
-            <br>
-            <br>
-
-            <!-- New Section Image Aligned Under Section AA -->
-            <div class="multiview-block">
-              <div class="drawing-card-box" onclick="openLightbox('assets/02.jpg', '02 LONGITUDINAL BUILDING SECTION', 'Detailed building section highlighting ground level (+0.00 LVL), sit-out slab (+100 LVL), prayer room, industrial staircase landing (+227.10 LVL), upper living, and roof slab levels.')">
-                <img src="assets/02.jpg" alt="Longitudinal Architectural Section" class="multiview-img horizontal">
-                <div class="drawing-hover-overlay">
-                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Longitudinal Section</span>
-                </div>
-              </div>
-              <h4 class="maroon-caption">LONGITUDINAL BUILDING SECTION — LEVELS & STAIRCASE LANDING</h4>
-            </div>
-
-          </div>
-
-          <!-- Right Column: North & South Elevations -->
-          <div class="multiview-col-right">
-
-            <div class="multiview-block">
-              <div class="drawing-card-box" onclick="openLightbox('assets/elevation_north.png', '02 NORTH SIDE ARCHITECTURAL ELEVATION', 'Detailed North Side Elevation drawing featuring 430cm wide full-height courtyard glazing, side courtyard area, sit-out slab (+500 LVL), and parapet terrace details.')">
-                <img src="assets/elevation_north.png" alt="North Elevation" class="multiview-img horizontal">
-                <div class="drawing-hover-overlay">
-                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect North Elevation</span>
-                </div>
-              </div>
-              <h4 class="maroon-caption text-right">NORTH ELEVATION — COURTYARD GLAZING FACADE</h4>
-            </div>
-
-            <div class="multiview-block">
-              <div class="drawing-card-box" onclick="openLightbox('assets/elevation_south.png', '02 SOUTH SIDE ARCHITECTURAL ELEVATION', 'Longitudinal South Side Elevation drawing detailing window opening schedules (203cm & 60cm openings), vertical stair glass volume (280cm), rear open terrace, and sit-out pillar.')">
-                <img src="assets/elevation_south.png" alt="South Elevation" class="multiview-img horizontal">
-                <div class="drawing-hover-overlay">
-                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect South Elevation</span>
-                </div>
-              </div>
-              <h4 class="maroon-caption text-right">SOUTH ELEVATION — WINDOW SCHEDULES & STAIR GLASS</h4>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Project Page 03: Master Bedroom Interior Design & 2D Plan Package -->
-  <section class="behance-project-section" id="project-bedroom">
-    <div class="container">
-      <div class="project-page-card">
-        <div class="project-page-header">
-          <div class="project-page-number">03</div>
-          <h2 class="project-page-title">INTERIOR DESIGN & 3D VISUALIZATION — MASTER BEDROOM PACKAGE</h2>
-          <div class="project-spec-block">
-            <p><strong>Project:</strong> Residential Master Bedroom Interior Design & 2D CAD Layout (406 x 351 CM)</p>
-            <p><strong>Scope:</strong> 2D Floor Plan Layout, Custom Wooden Wardrobe Unit, Backlit Oval Dressing Vanity & 3D Photorealistic Interior Rendering.</p>
-          </div>
-        </div>
-
-        <div class="bedroom-grid">
-
-          <div class="bedroom-plan-col">
-            <div class="dashed-drawing-box" onclick="openLightbox('assets/bedroom_plan.png', '03 2D CAD BEDROOM FLOOR PLAN (406 x 351 CM)', 'Detailed 2D CAD floor plan detailing bedroom dimensions (406x351cm), balcony (173x150cm), custom wardrobes, study table with dressing, side tables, and door swings.')">
-              <img src="assets/bedroom_plan.png" alt="2D CAD Bedroom Floor Plan" class="bedroom-plan-img">
-              <div class="drawing-hover-overlay">
-                <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View HD 2D CAD Plan</span>
-              </div>
-            </div>
-            <span class="drawing-sub-caption">2D CAD FLOOR PLAN — DIMENSIONS 406 x 351 CM & BALCONY LAYOUT</span>
-          </div>
-
-          <div class="bedroom-renders-col">
-            <div class="bedroom-renders-grid">
-
-              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_1.jpg', '03 MASTER BEDROOM INTERIOR — VIEW 01 (VANITY & WARDROBE)', 'Photorealistic 3D interior render showing master bed, custom wood wardrobe, illuminated dressing console with oval mirror, and wooden ceiling fan.')">
-                <img src="assets/bedroom_render_1.jpg" alt="Master Bedroom 3D Render View 1" class="bedroom-render-img">
-                <div class="drawing-hover-overlay">
-                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 01</span>
-                </div>
-                <span class="render-mini-label">VIEW 01 — DRESSING & WARDROBE</span>
-              </div>
-
-              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_2.jpg', '03 MASTER BEDROOM INTERIOR — VIEW 02 (BACKLIT VANITY CONSOLE)', 'Detailed 3D interior render highlighting the backlit oval dressing mirror, open storage shelves, custom wood paneling, and brass handles.')">
-                <img src="assets/bedroom_render_2.jpg" alt="Master Bedroom 3D Render View 2" class="bedroom-render-img">
-                <div class="drawing-hover-overlay">
-                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 02</span>
-                </div>
-                <span class="render-mini-label">VIEW 02 — BACKLIT VANITY CONSOLE</span>
-              </div>
-
-              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_3.jpg', '03 MASTER BEDROOM INTERIOR — VIEW 03 (BED & LANDSCAPE PAINTING)', 'Photorealistic 3D interior render showing bed, side table, landscape artwork, and full-height custom wooden wardrobe unit.')">
-                <img src="assets/bedroom_render_3.jpg" alt="Master Bedroom 3D Render View 3" class="bedroom-render-img">
-                <div class="drawing-hover-overlay">
-                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 03</span>
-                </div>
-                <span class="render-mini-label">VIEW 03 — BED & ARTWORK WALL</span>
-              </div>
-
-              <div class="bedroom-render-card" onclick="openLightbox('assets/bedroom_render_4.jpg', '03 MASTER BEDROOM INTERIOR — VIEW 04 (BALCONY & WINDOW VIEW)', 'Photorealistic 3D interior render showing master bed, side table, window with sheer curtains, air conditioner, and balcony door layout.')">
-                <img src="assets/bedroom_render_4.jpg" alt="Master Bedroom 3D Render View 4" class="bedroom-render-img">
-                <div class="drawing-hover-overlay">
-                  <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> View Render 04</span>
-                </div>
-                <span class="render-mini-label">VIEW 04 — WINDOW & BALCONY VIEW</span>
-              </div>
-
-            </div>
-          </div>
-
+      <div class="block" data-sc-in>
+        <h3 class="block__title">Education and certification</h3>
+        <div class="table-wrap">
+          <table class="sched sched--edu">
+            <tbody>
+              <tr><td class="mono">2022 – 2025</td><th scope="row">Diploma in Architecture</th><td>JDT Islam Polytechnic College, Calicut. State Board of Technical Education, Kerala. Design theory, building construction, CAD drafting, structural mechanics, building codes.</td></tr>
+              <tr><td class="mono">6 months</td><th scope="row">Master Diploma in Building Designing</th><td>CADD Campus, Calicut. AutoCAD, 3ds Max, Revit Architecture and presentation boards.</td></tr>
+              <tr><td class="mono">Certified</td><th scope="row">Autodesk 3ds Max with V-Ray</th><td>Photoreal 3D modelling, lighting, materials and architectural rendering.</td></tr>
+              <tr><td class="mono">Certified</td><th scope="row">Autodesk AutoCAD</th><td>2D drafting: plans, structural sections, elevations, working drawings.</td></tr>
+              <tr><td class="mono">Certified</td><th scope="row">Revit Architecture</th><td>Floor plans, wall sections, schedules and 3D building components.</td></tr>
+              <tr><td class="mono">2020 – 2022</td><th scope="row">Higher Secondary Education</th><td>Govt. HSS Azchavattam, Kozhikode. Kerala Board of Higher Secondary Education.</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </section>
 
-<!-- Project Page 04: Electrical Floor Plan Layout Section -->
-  <section class="behance-render-section" id="project-electrical">
-    <div class="container">
-      <div class="render-card-wrapper">
-
-        <div class="project-page-header">
-          <div class="project-page-number">04</div>
-          <span class="maroon-badge"><i class="fa-solid fa-bolt"></i> ELECTRICAL LAYOUT DETAILS</span>
-          <h2 class="render-main-title mt-2">GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)</h2>
-          <p class="render-sub-desc">Comprehensive electrical layout detailing switch boards, lighting points, CCTV, exhaust fans, water purifier, and distribution board legends</p>
+  <!-- ============================================== 7 · CLOSE (title block draws itself) -->
+  <section id="contact" class="ground-dark act-close" data-sc-act="flow" data-ground="dark">
+    <div class="sc-wrap">
+      <div class="tblock" id="tblock">
+        <div class="tblock__cell tblock__head">
+          <h2 class="sc-display sc-display--xl">Start a project.</h2>
+          <p class="sc-body">Open for junior architect, draftsman and 3D visualization roles, and for freelance drawings and renders.</p>
         </div>
 
-        <div class="render-hero-display">
-          <div class="render-full-image-box" onclick="openLightbox('assets/electrical_drawing_uploaded.jpg', '04 GROUND & FIRST FLOOR PLAN (ELECTRICAL LAYOUT)', 'Detailed electrical working drawing showing Ground Floor & First Floor Layouts with complete Symbol/Code tables for Ceiling Fans, LED Panel Lights, Tube Lights, CCTV, AC Units, Distribution Boards, and Wall Fittings.')">
-            <div class="render-image-backdrop">
-              <div class="render-facade-graphic">
-                <img src="assets/electrical_drawing_uploaded.jpg" alt="Ground & First Floor Plan Electrical Layout" class="render-facade-img">
-              </div>
-            </div>
-            <div class="render-inspect-overlay">
-              <button class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-expand"></i> Inspect High-Res Electrical Layout
-              </button>
-            </div>
+        <form class="tblock__form" id="contactForm" action="mailto:athulpsajeev1816@gmail.com" method="post" enctype="text/plain">
+          <label class="tblock__cell field">
+            <span class="field__k">Your name</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label class="tblock__cell field">
+            <span class="field__k">Your email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label class="tblock__cell field field--wide">
+            <span class="field__k">Project</span>
+            <input name="subject" type="text" placeholder="A residence, an interior, a set of renders" required>
+          </label>
+          <label class="tblock__cell field field--wide">
+            <span class="field__k">Brief</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <div class="tblock__cell field--wide tblock__send">
+            <button class="btn btn--accent" type="submit">Send via email</button>
+            <p class="field__note">Opens your email app with the message filled in.</p>
           </div>
-        </div>
+        </form>
 
+        <dl class="tblock__meta">
+          <div class="tblock__cell"><dt class="field__k">Drawn by</dt><dd>Athul P</dd></div>
+          <div class="tblock__cell"><dt class="field__k">Based in</dt><dd>Kozhikode, Kerala, India</dd></div>
+          <div class="tblock__cell"><dt class="field__k">Email</dt><dd><a href="mailto:athulpsajeev1816@gmail.com">athulpsajeev1816@gmail.com</a></dd></div>
+          <div class="tblock__cell"><dt class="field__k">Documents</dt><dd class="docs"><button class="link" type="button" data-cv>View CV</button><a class="link" href="assets/athul_cv.pdf" download>Download CV</a></dd></div>
+        </dl>
+
+        <svg class="tblock__lines" aria-hidden="true" preserveAspectRatio="none"><g id="tblockLines"></g></svg>
       </div>
+
+      <footer class="foot">
+        <span>© 2026 Athul P</span>
+        <a href="#section">Back to the first line</a>
+      </footer>
     </div>
   </section>
 
-  <!-- Project Page 05: Master Bedroom Toilet & Vanity Plumbing Details -->
-  <section class="behance-project-section" id="project-plumbing">
-    <div class="container">
-      <div class="project-multiview-card">
+</main>
 
-        <div class="project-page-header">
-          <div class="project-page-number">05</div>
-          <span class="maroon-badge"><i class="fa-solid fa-faucet-drip"></i> PLUMBING & SANITARY WORKING DRAWINGS</span>
-          <h2 class="render-main-title mt-2">MASTER BEDROOM TOILET & VANITY PLUMBING DETAILS</h2>
-          <p class="render-sub-desc">Detailed 2D CAD plumbing elevations, toilet floor layout (240x150 CM), four-wall interior view directions, and washbasin vanity specifications</p>
-        </div>
-
-        <div class="multiview-grid mt-4">
-
-          <!-- Left Column: Wash Basin Vanity Detail -->
-          <div class="multiview-col-left">
-            <div class="drawing-card-box" onclick="openLightbox('assets/plum1.jpg', '05 WASH BASIN VANITY ELEVATION & PLAN', 'Detailed CAD elevation and plan drawing of the washbasin vanity, counter top, mirror light fixture, round vanity mirror, ring towel rail, and shelving layout.')">
-              <img src="assets/plum1.jpg" alt="Wash Basin Vanity Elevation and Plan" class="multiview-img vertical">
-              <div class="drawing-hover-overlay">
-                <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Vanity Details</span>
-              </div>
-            </div>
-            <h4 class="maroon-caption">VANITY ELEVATION & COUNTERTOP PLAN</h4>
-          </div>
-
-          <!-- Right Column: Full Toilet Plumbing Package -->
-          <div class="multiview-col-right">
-            <div class="drawing-card-box" onclick="openLightbox('assets/plum2.jpg', '05 M.BEDROOM TOILET PLUMBING DETAILS (GF-MB-T1)', 'Comprehensive working drawing sheet displaying West, East, North, and South wall elevations with fall ceiling (+240 lvl), shower height, ledge wall, WHC positions, and 240x150cm floor plan.')">
-              <img src="assets/plum2.jpg" alt="Master Bedroom Toilet Plumbing Details Sheet" class="multiview-img vertical">
-              <div class="drawing-hover-overlay">
-                <span class="hover-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Inspect Full Plumbing Sheet</span>
-              </div>
-            </div>
-            <h4 class="maroon-caption text-right">4-WALL ELEVATIONS & TOILET LAYOUT PLAN (240 x 150 CM)</h4>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Project Page 06: Full-Bleed 3D Render Showcase -->
-  <section class="behance-render-section" id="project-render">
-    <div class="container">
-      <div class="render-card-wrapper">
-
-        <div class="project-page-header">
-          <div class="project-page-number">06</div>
-          <span class="maroon-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> 3DS MAX & V-RAY VISUALIZATION</span>
-          <h2 class="render-main-title mt-2">PHOTOREALISTIC EXTERIOR ARCHITECTURAL RENDERS</h2>
-          <p class="render-sub-desc">V-Ray Lighting scenes, Daylight simulation, Material Texturing & Exterior Environment Renders</p>
-        </div>
-
-        <div class="render-hero-display">
-          <div class="render-full-image-box" onclick="openLightbox('assets/exterior_render_full.jpg', '06 PHOTOREALISTIC ARCHITECTURAL EXTERIOR VISUALIZATION', 'Full single page architectural 3D exterior rendering created with 3ds Max & V-Ray featuring photorealistic lighting, materials, paving, landscaping, and vehicle integration.')">
-            <div class="render-image-backdrop">
-              <div class="render-facade-graphic">
-                <img src="assets/exterior_render_full.jpg" alt="Photorealistic Architectural 3D Exterior Render" class="render-facade-img">
-              </div>
-            </div>
-            <div class="render-inspect-overlay">
-              <button class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-expand"></i> Inspect High-Res Render
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience & Internships Timeline Section -->
-  <section class="section experience-section" id="experience">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-subtitle">[ CAREER HISTORY ]</span>
-        <h2 class="section-title">Internship & Professional Experience</h2>
-        <p class="section-desc">Hands-on architectural practice across leading design firms in Calicut, India</p>
-      </div>
-
-      <div class="timeline-wrapper">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div class="timeline-title-group">
-                <span class="role-badge">Junior Architect</span>
-                <h3 class="timeline-role">Junior Architect</h3>
-                <h4 class="timeline-company"><i class="fa-solid fa-building-user"></i> Design Palette, Calicut, India</h4>
-              </div>
-              <span class="timeline-date"><i class="fa-solid fa-calendar"></i> Aug 2025 – Feb 2026</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Prepared detailed 2D architectural and structural drawings using AutoCAD.</li>
-              <li>Developed floor plans, elevations, sections, and comprehensive construction details for client execution.</li>
-              <li>Collaborated with design leads to maintain precision and code compliance across working drawings.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>AutoCAD 2D</span>
-              <span>Floor Plans</span>
-              <span>Elevations & Sections</span>
-              <span>Construction Details</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div class="timeline-title-group">
-                <span class="role-badge intern-badge">Architectural Intern</span>
-                <h3 class="timeline-role">Architectural Intern</h3>
-                <h4 class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> CADD Campus, Calicut, India</h4>
-              </div>
-              <span class="timeline-date"><i class="fa-solid fa-calendar"></i> Dec 2024 – Jan 2025</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Assisted in drafting technical drawings and site layouts for residential projects.</li>
-              <li>Developed basic 3D massing models using SketchUp to visualize spatial arrangements.</li>
-              <li>Participated in design discussions and client review meetings.</li>
-              <li>Observed site execution and construction coordination firsthand.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>Technical Drafting</span>
-              <span>SketchUp 3D</span>
-              <span>Site Layouts</span>
-              <span>Client Reviews</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div class="timeline-title-group">
-                <span class="role-badge intern-badge">Architectural Intern</span>
-                <h3 class="timeline-role">Architectural Intern</h3>
-                <h4 class="timeline-company"><i class="fa-solid fa-drafting-compass"></i> Saleem Groups / CAD Center, Calicut, India</h4>
-              </div>
-              <span class="timeline-date"><i class="fa-solid fa-calendar"></i> Apr 2024 – May 2024</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Prepared architectural working drawings and site plans for residential and commercial projects.</li>
-              <li>Supported design coordination between structural and architectural requirements.</li>
-              <li>Assisted in AutoCAD drafting and SketchUp presentations.</li>
-              <li>Observed site inspections and reporting processes.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span>Working Drawings</span>
-              <span>Site Plans</span>
-              <span>AutoCAD</span>
-              <span>Site Inspection</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills & Competencies Section -->
-  <section class="section skills-section" id="skills">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-subtitle">[ TECHNICAL MATRIX ]</span>
-        <h2 class="section-title">Technical Skills & Certified Software Proficiency</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skills-category-card">
-          <div class="category-header">
-            <div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div>
-            <h3>Certified Software & CAD/3D Tools</h3>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fa-solid fa-vector-square"></i> Autodesk AutoCAD (2D Drafting & Documentation)</span>
-                <span class="skill-percent">95%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fa-solid fa-cube"></i> Autodesk 3ds Max with V-Ray Rendering</span>
-                <span class="skill-percent">90%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fa-solid fa-building"></i> Revit Architecture</span>
-                <span class="skill-percent">85%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fa-solid fa-cubes"></i> SketchUp (3D Modeling)</span>
-                <span class="skill-percent">85%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fa-solid fa-wand-magic-sparkles"></i> Lumion (Visualization)</span>
-                <span class="skill-percent">80%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <div class="skill-info">
-                <span class="skill-name"><i class="fa-solid fa-image"></i> Photoshop (Presentation Boards)</span>
-                <span class="skill-percent">75%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills-category-card">
-          <div class="category-header">
-            <div class="category-icon"><i class="fa-solid fa-draw-polygon"></i></div>
-            <h3>Drafting & Architectural Knowledge</h3>
-          </div>
-          <div class="skill-chip-group">
-            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Architectural Drawings</span></div>
-            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Working Drawings</span></div>
-            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Floor Plans</span></div>
-            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Elevations</span></div>
-            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Structural Sections</span></div>
-            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Construction Details</span></div>
-            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Site Layouts & Planning</span></div>
-            <div class="skill-chip"><i class="fa-solid fa-check"></i><span>Staircase Geometry & Detailing</span></div>
-          </div>
-        </div>
-
-        <div class="skills-category-card">
-          <div class="category-header">
-            <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
-            <h3>Soft Skills & Languages</h3>
-          </div>
-          <div class="soft-skills-container">
-            <h4>Professional Traits</h4>
-            <div class="pill-group">
-              <span class="pill"><i class="fa-solid fa-clock"></i> Time Management</span>
-              <span class="pill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
-              <span class="pill"><i class="fa-solid fa-comments"></i> Communication Skills</span>
-              <span class="pill"><i class="fa-solid fa-eye"></i> Attention to Detail</span>
-            </div>
-
-            <h4 class="mt-4">Languages Spoken</h4>
-            <div class="languages-list">
-              <div class="lang-item"><span class="lang-name">Malayalam</span><span class="lang-level fluent">Fluent (Native)</span></div>
-              <div class="lang-item"><span class="lang-name">English</span><span class="lang-level proficient">Proficient</span></div>
-              <div class="lang-item"><span class="lang-name">Hindi</span><span class="lang-level basic">Basic</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education & Certifications Section -->
-  <section class="section education-section" id="education">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-subtitle">[ QUALIFICATIONS & CERTIFICATIONS ]</span>
-        <h2 class="section-title">Education & Professional Certifications</h2>
-      </div>
-
-      <div class="education-grid">
-        <div class="edu-card featured-edu">
-          <div class="edu-badge-icon"><i class="fa-solid fa-award"></i></div>
-          <div class="edu-content">
-            <span class="edu-year"><i class="fa-solid fa-calendar"></i> 2022 – 2025</span>
-            <h3 class="edu-title">Diploma in Architecture</h3>
-            <h4 class="edu-institution">JDT Islam Polytechnic College, Calicut</h4>
-            <p class="edu-board">State Board of Technical Education, Kerala</p>
-            <p class="edu-desc">Comprehensive 3-year technical diploma program covering architectural design theory, building construction principles, CAD drafting, structural mechanics, and building codes.</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-badge-icon"><i class="fa-solid fa-cube"></i></div>
-          <div class="edu-content">
-            <span class="edu-year"><i class="fa-solid fa-certificate"></i> Certified Professional</span>
-            <h3 class="edu-title">Autodesk 3ds Max with V-Ray Rendering</h3>
-            <h4 class="edu-institution">Certified Coursework</h4>
-            <p class="edu-desc">Advanced certification in photorealistic 3D modeling, lighting setup, material creation, and V-Ray architectural rendering.</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-badge-icon"><i class="fa-solid fa-vector-square"></i></div>
-          <div class="edu-content">
-            <span class="edu-year"><i class="fa-solid fa-certificate"></i> Certified Professional</span>
-            <h3 class="edu-title">Autodesk AutoCAD</h3>
-            <h4 class="edu-institution">Certified Coursework</h4>
-            <p class="edu-desc">Professional 2D drafting certification covering architectural plans, structural sections, elevations, and working drawings.</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-badge-icon"><i class="fa-solid fa-building"></i></div>
-          <div class="edu-content">
-            <span class="edu-year"><i class="fa-solid fa-certificate"></i> Certified Professional</span>
-            <h3 class="edu-title">Revit Architecture</h3>
-            <h4 class="edu-institution">Certified Coursework</h4>
-            <p class="edu-desc">Architectural modeling certification covering floor plans, wall sections, schedules, and 3D building components.</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-badge-icon"><i class="fa-solid fa-certificate"></i></div>
-          <div class="edu-content">
-            <span class="edu-year"><i class="fa-solid fa-clock"></i> 6 Month Professional Course</span>
-            <h3 class="edu-title">Master Diploma in Building Designing</h3>
-            <h4 class="edu-institution">CADD CAMPUS CALICUT</h4>
-            <p class="edu-desc">Master diploma program covering comprehensive building design software, AutoCAD drafting, 3ds Max, Revit Architecture, and presentation board design.</p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-badge-icon"><i class="fa-solid fa-school"></i></div>
-          <div class="edu-content">
-            <span class="edu-year"><i class="fa-solid fa-calendar"></i> 2020 – 2022</span>
-            <h3 class="edu-title">Higher Secondary Education</h3>
-            <h4 class="edu-institution">Govt. HSS Azchavattam, Kozhikode</h4>
-            <p class="edu-board">Kerala Board of Higher Secondary Education</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-subtitle">[ GET IN TOUCH ]</span>
-        <h2 class="section-title">Connect & Collaborate</h2>
-        <p class="section-desc">Open for Junior Architect, Draftsman & 3D Visualization Roles</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info-wrapper">
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
-            <div class="contact-details">
-              <span class="contact-label">Email Address</span>
-              <a href="mailto:athulpsajeev1816@gmail.com" class="contact-value">athulpsajeev1816@gmail.com</a>
-            </div>
-            <button class="copy-btn" onclick="copyText('athulpsajeev1816@gmail.com', this)" title="Copy Email">
-              <i class="fa-regular fa-copy"></i>
-            </button>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="contact-details">
-              <span class="contact-label">Location</span>
-              <span class="contact-value">Kozhikode, Kerala, India</span>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
-            <div class="contact-details">
-              <span class="contact-label">LinkedIn Profile</span>
-              <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-value">Connect on LinkedIn</a>
-            </div>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" class="external-link-btn" title="Open LinkedIn">
-              <i class="fa-solid fa-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-form-container">
-          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
-            <h3>Send a Direct Message</h3>
-
-            <div class="form-group">
-              <label for="senderName"><i class="fa-solid fa-user"></i> Your Name</label>
-              <input type="text" id="senderName" required placeholder="Arch. John Doe / Firm Name">
-            </div>
-
-            <div class="form-group">
-              <label for="senderEmail"><i class="fa-solid fa-envelope"></i> Email Address</label>
-              <input type="email" id="senderEmail" required placeholder="name@company.com">
-            </div>
-
-            <div class="form-group">
-              <label for="msgSubject"><i class="fa-solid fa-heading"></i> Subject</label>
-              <input type="text" id="msgSubject" required placeholder="Job Opportunity / Project Inquiry">
-            </div>
-
-            <div class="form-group">
-              <label for="senderMsg"><i class="fa-solid fa-comment-dots"></i> Message</label>
-              <textarea id="senderMsg" rows="4" required placeholder="Hello Athul, we are interested in discussing an architectural drafting role..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-block">
-              <i class="fa-solid fa-paper-plane"></i> Send Message
-            </button>
-
-            <div class="form-status" id="formStatus"></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-left">
-        <span class="footer-brand">ATHUL P</span>
-        <span class="footer-copy">&copy; 2026 Athul P. All Rights Reserved. Junior Architect & 3D Visualizer Portfolio.</span>
-      </div>
-      <div class="footer-right">
-        <a href="#hero" class="back-to-top" title="Back to top">
-          Back to top <i class="fa-solid fa-arrow-up"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Lightbox Modal -->
-  <div class="modal-overlay" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="lightbox-container">
-      <div class="lightbox-header">
-        <div class="lightbox-title-group">
-          <h3 id="lightboxTitle">Architectural Drawing</h3>
-          <span id="lightboxCaption">Description</span>
-        </div>
-        <div class="lightbox-controls">
-          <button onclick="zoomLightbox(1.2)" class="modal-icon-btn" title="Zoom In"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
-          <button onclick="zoomLightbox(0.8)" class="modal-icon-btn" title="Zoom Out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
-          <button onclick="resetLightboxZoom()" class="modal-icon-btn" title="Reset Zoom"><i class="fa-solid fa-rotate-right"></i></button>
-          <button onclick="closeLightbox()" class="modal-icon-btn close-btn" title="Close"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-      </div>
-      <div class="lightbox-body" id="lightboxBody">
-        <img id="lightboxImg" src="" alt="HD Architectural Drawing">
-      </div>
+<!-- ============================================================ dialogs -->
+<dialog class="viewer" id="viewer" aria-labelledby="viewerTitle">
+  <div class="viewer__bar">
+    <p class="viewer__title" id="viewerTitle">Drawing</p>
+    <div class="viewer__tools">
+      <button class="icon-btn" type="button" data-zoom="-1" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12"/></svg></button>
+      <output class="viewer__pct mono" id="viewerPct">100%</output>
+      <button class="icon-btn" type="button" data-zoom="1" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12M12 6v12"/></svg></button>
+      <button class="icon-btn" type="button" data-zoom="0" aria-label="Reset zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+      <button class="icon-btn" type="button" data-close aria-label="Close viewer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
   </div>
+  <div class="viewer__stage" id="viewerStage">
+    <img id="viewerImg" alt="" draggable="false">
+  </div>
+</dialog>
 
-  <!-- PDF CV Modal -->
-  <div class="modal-overlay" id="cvModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="cv-modal-container">
-      <div class="cv-modal-header">
-        <div class="cv-modal-title">
-          <i class="fa-solid fa-file-pdf text-accent"></i>
-          <span>Curriculum Vitae — ATHUL P</span>
-        </div>
-        <div class="cv-modal-actions">
-          <a href="assets/athul_cv.pdf" download class="btn btn-primary btn-sm">
-            <i class="fa-solid fa-download"></i> Download PDF
-          </a>
-          <button onclick="closeCvModal()" class="modal-icon-btn close-btn" title="Close"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-      </div>
-      <div class="cv-modal-body">
-        <iframe src="assets/athul_cv.pdf" class="pdf-frame" title="Athul P CV PDF Viewer"></iframe>
-      </div>
+<dialog class="viewer viewer--cv" id="cv" aria-labelledby="cvTitle">
+  <div class="viewer__bar">
+    <p class="viewer__title" id="cvTitle">Curriculum vitae, Athul P</p>
+    <div class="viewer__tools">
+      <a class="btn btn--accent btn--sm" href="assets/athul_cv.pdf" download>Download CV</a>
+      <button class="icon-btn" type="button" data-close aria-label="Close CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
   </div>
+  <iframe class="cv-frame" data-src="assets/athul_cv.pdf" title="Athul P CV, PDF"></iframe>
+</dialog>
 
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="lib/scrollcraft.js"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
